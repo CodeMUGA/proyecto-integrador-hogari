@@ -1,0 +1,94 @@
+.cabeza{
+    background-image: url("operadora.jpg") ;
+
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    background: #f1f1f1;
+  }
+  
+#enviar{
+    background-color: #68757B;
+    font-weight: 600;
+    padding: 5px 25px 5px 25px;
+    display: inline-block;
+    border: 1px solid transparent
+}
+
+#contactanos{
+    color: #1e6ba2;
+}
+
+
+.pie{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    background:  #68757B;
+}
+
+.barra{
+    padding:100px;
+
+}
+
+#Titulo1{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    background: #FFFFFF;
+}
+
+#Titulo2{
+    position: relative;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100px;
+    background: #FFFFFF;
+}
+
+.ubicacion{
+    margin: 40px;
+    background-color: white;
+    border-style: solid;
+    border-color: #cccccc;
+    border-radius: 5px;
+    border-top: solid 0px;
+    border-left: solid 0px;
+}
+
+.form-label{
+    color:#1e6ba2;
+}
+
+.nav{
+    background-color: #344142;
+    border-style: solid;
+    border-color: transparent;
+    padding:5px;
+}
+
+/*Cambiar color en el texto de la navbar */
+.nav a{
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+
+.nav a:hover{
+    background-color: #ddd;
+    color: black;  
+}

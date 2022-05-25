@@ -1,0 +1,72 @@
+body{/*para poner de fondo una imagen*/
+    margin: 0;
+    padding: 0;
+    background: url(/Assets/img/formulario/casa.webp);   
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+#titulo{
+    background-color: #61c1bc;
+}
+
+.navbar-color{ /* Clase que se aplicara al navbar */
+    background-color: var(--color-secundario)!important;
+    color:var(--color-fuente)!important;
+    font-weight: 500!important;
+    opacity: 0.9!important;
+}
+
+
+
+
+#barra1{
+ 
+border-radius: 60px;
+height: auto;
+width: auto;
+
+}
+
+#barra2{
+border-radius: 60px;
+
+height: auto;
+width: auto;
+}
+
+#barra3{
+    border-radius: 60px;
+    
+    height: auto;
+    width: auto;
+    }
+    
+    #barra4{
+        border-radius: 60px;
+        height: auto;
+        width: auto;
+        }
+     #barra5{
+        border-radius: 60px;
+            height: auto;
+            width: auto;
+            }
+                  
+/*aqui empiezan los botones */
+#button{
+    background-color: #61c1bc;
+}
+#botoncito{
+background-color: #61c1bc;
+border-radius: 60px;
+
+}
+
+.footer-class{
+    background-color: var  #61c1bc;
+    color: var #61c1bc;
+    font-weight: bold;
+}

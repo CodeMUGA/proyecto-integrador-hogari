@@ -87,7 +87,9 @@
     color:#03364D;
 
 }
-
+.cambio{
+    background-color: var(--color-secundario) !important;
+}
 /*Se intento modificar texto en menu de deleccion*/
 .ciudad{
     color:#03364D;

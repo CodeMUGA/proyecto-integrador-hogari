@@ -2,147 +2,161 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Cargamos bootstrap desde el CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-        <!--Cargamos los iconos de boostrap-->
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/Assets/CSS/contacto/contacto.css">
-    <title>preuba form</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Cargamos bootstrap desde el CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <!--Cargamos los iconos de boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/Assets/CSS/contacto/contact.css">
+  <title>preuba form</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
-        <div class="container">
-            <a href="#" class="navbar-brand">Hogari</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
-                    <li class="nav-item">
+  <!-- Empieza Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
+          <li class="nav-item">
+            <!--La clase active se debe de poner en cada página del en el navbar -->
+            <a href="/index.html" class="nav-link active" aria-current="page">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/ventas.html" class="nav-link"> Productos </a>
+          </li>
+          <li class="nav-item">
+            <a href="/formulario.html" class="nav-link"> Formulario </a>
+          </li>
+          <li class="nav-item">
+            <a href="/contacto.html" class="nav-link"> Contáctanos </a>
+          </li>
+          <li class="nav-item">
+            <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav col-xs-4 border-mq">
 
-                        <a href="/index.html" class="nav-link active" aria-current="page">
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/ventas.html" class="nav-link"> Productos </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/formulario.html" class="nav-link"> Formulario </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contacto.html" class="nav-link"> Contáctanos </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav col-xs-4 border-mq">
-                    <li class="nav-item text-menu">
-                        <a href="#" class="nav-link"> API </a>
-                    </li>
-                    <li class="nav-item text-menu">
-                        <a href="#" class="nav-link"> Help </a>
-                    </li>
-                    <li class="nav-item text-menu">
-                        <a href="#" class="nav-link"> Login </a>
-                    </li>
 
-                    <a href="" class="btn btn-primary btn-signup">Sign Up</a>
-                </ul>
+          <li class="nav-item text-menu">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
+          </li>
+
+          <a href="" class="btn btn-primary btn-signup">Sign Up</a>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- navbar -->
+
+  <main>
+    <div class="banner-area">
+      <div class="content-area">
+        <div class="content">
+          <h1 class="display-5 fw-bold">Contactanos</h1>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </main>
+
+
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.5055046820285!2d-103.43232928460094!3d20.6896876046417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aee7fa9f7c5f%3A0xd647fb04da70b150!2sAv%20Naciones%20Unidas%2C%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1652283656690!5m2!1ses-419!2smx"
+            width="400px" height="400px" style="border:0;margin-left: 40px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <p class="card-title" style="text-align: center;margin-bottom: 30px;font-size: 30px;padding-top: 0px;">
+              Contactos</p>
+            <p style="text-align: center;"><i class="bi bi-telephone"></i>Telefono:33225099</p>
+            <p style="text-align: center;"><i class="bi bi-geo-alt"></i>Direccion:Av Naciones Unidas, Zapopan, Jal.</p>
+            <p style="text-align: center;"><i class="bi bi-instagram"></i><a
+                href="https://www.instagram.com/accounts/onetap/?next=%2F"
+                style="text-decoration: none;color:black;">Instagram</a></p>
+            <p style="text-align: center;"><i class="bi bi-facebook"></i><a href="https://es-la.facebook.com/"
+                style="text-decoration: none;color:black;">Facebook</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <form id="enviar-mail" class="">
+            <div class="mb-2">
+                <!-- <label for="email">Correo</label> -->
+                <input class="form-control"  id="email" type="email" placeholder="Email@correo.com">
             </div>
+            <div class="mb-2">
+              <!-- <label for="asunto">Asunto</label> -->
+              <input class="form-control"  id="asunto" type="text" placeholder="Tu asunto">
+          </div>
+          <div class="mb-2">
+            <!-- <label for="nombre">Nombre</label> -->
+            <input class="form-control"  id="nombre" type="text" placeholder="Nombre Completo">
         </div>
-    </nav>
-
-    <main>
-        <div class="banner-area">
-            <div class="content-area">
-                <div class="content">
-                    <h1 class="display-5 fw-bold">Contactanos</h1>
-                    
-                </div>
+        <div class="mb-2">
+          <!-- <label for="telefono">Telefono</label> -->
+          <input class="form-control"  id="telefono" type="tel" placeholder="Tu telefono">
+      </div>
+            <div class="mb-2">
+                <label for="mensaje">Comentarios</label>
+                <textarea class="form-control" id="mensaje"></textarea>
             </div>
-        </div>
-        </div>
-        </div>
-        </div>
+  
 
-
-
-        <div class="container-fluid" style="margin-top: 70px;margin-bottom: 70px;">
-            <div class="row">
-                <div class="col">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.5055046820285!2d-103.43232928460094!3d20.6896876046417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aee7fa9f7c5f%3A0xd647fb04da70b150!2sAv%20Naciones%20Unidas%2C%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1652283656690!5m2!1ses-419!2smx"
-                        width="600px" height="400px" style="border:0;margin-left: 40px;" allowfullscreen="" loading="lazy"  
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
-                </div>
-                <div class="col">
-                    <div style="width: 18rem;height:400px ;margin-left:70px">
-                        <div class="card-body">
-                            <p class="card-title" style="text-align: center;margin-bottom: 30px;font-size: 30px;padding-top: 0px;">Contactos</p>
-                            <p style="text-align: center;"><i class="bi bi-telephone"></i>Telefono:33225099</p>
-                            
-                            <p style="text-align: center;"><i class="bi bi-geo-alt"></i>Direccion:Av Naciones Unidas, Zapopan, Jal.</p>
-                            <p style="text-align: center;"><i class="bi bi-instagram"></i><a href="https://www.instagram.com/accounts/onetap/?next=%2F" style="text-decoration: none;color:black;">Instagram</a></p>
-                            <p style="text-align: center;"><i class="bi bi-facebook"></i><a href="https://es-la.facebook.com/" style="text-decoration: none;color:black;">Facebook</a></p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="miFormulario">
-                        <form action="mailto:ivan.alm99@gmail.com" method="post" id="form">
-                            <div class="form">
-                                
-                                <div class="grupo">
-                                    <input type="text" name="" id="name" maxlength="20" style="text-align: center;"><br>
-                                    <label for="" style="margin-left: 90px;" style="text-align: center;">Nombre</label>
-                                </div>
-                                <div class="grupo">
-                                    <input type="text" name="" id="email" maxlength="20" style="text-align: center;"><br>
-                                    <label for="" style="margin-left: 100px;">email</label>
-                                </div>
-                                <div class="grupo">
-                                    <input type="text" name="" id="numero" style="text-align: center;"><br>
-                                    <label for="" style="margin-left: 90px;">Numero</label>
-                                </div>
-                                <div class="grupo">
-                                    <input type="text" name="" id="comentarios" maxlength="150" style="text-align: center;"><br>
-                                    <label for="" style="margin-left: 80px;">Comentarios</label>
-                                </div>
-                                <button type="submit" id="btnSubmit">Enviar</button>
-                                <p class="warnings" id="warnings">
-                                   
-                                </p>
-
-                            </div>
-                        </form>
-                    </div>
-                </div>
+            <div class="d-flex justify-content-start">
+                    <button id="enviar" class="btn btn-primary btn-signup"type="submit">Enviar</button>
             </div>
+
+            <div  id="spinner">
+              <div class="sk-chase">
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+              </div>
+          </div>
+
+
+        </form>
         </div>
 
-    </main>
-
-    <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
-        <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
-    </footer> 
+      </div>
+    </div>
+  </section>
 
 
-    <script src="/Assets/JS/contacto/contacto.js"></script>
+  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+    <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
+  </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-        crossorigin="anonymous"></script>
+
+  <!-- <script src="/Assets/JS/contacto/contacto.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+    <script src='assets/js/contacto/app-contact.js'></script>
 </body>
 
 </html>

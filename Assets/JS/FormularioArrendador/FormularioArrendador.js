@@ -106,3 +106,9 @@ function validarExt(){ //Validamos extensiones permitidas
 }
 
 
+for(let element in nuevoUsario){
+    if(nuevoUsario[element] == "" || nuevoUsario[element] == ''){
+        nuevoUsario[element] = undefined;
+    } 
+   
+}

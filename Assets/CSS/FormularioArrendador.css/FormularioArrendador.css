@@ -64,42 +64,14 @@
 }
 
 
-.imgInicio{
-
-    text-align: right;
-    background: linear-gradient(288.34deg, #03364D 2.17%, rgba(196, 196, 196, 0.234375) 46.72%, rgba(196, 196, 196, 0) 56.85%);
-}
-
- /*Informacion de bienvenida*/
-.cartaB{
-    position: relative;
-    margin:30px;
-    padding:20px;
-    
-}
-/*Menu se seleccion*/
-
-.menuInicio{
-    position: relative;
-    text-align: right;
-    margin:10px;
-    padding:20px;
-    color:#03364D;
-
-}
-.cambio{
-    background-color: var(--color-secundario) !important;
-}
-/*Se intento modificar texto en menu de deleccion*/
-.ciudad{
-    color:#03364D;
-    background-color: #03364D;
-}
-#pasos{ 
-    border-right: var(--color-resaltar);
+h3{
+    color: var(--color-primario)!important;
 }
 
 
+/*.genero input:checked{
+    background-color: var(--color-primario)!important;
+}*/
 
   /* Footer */
 
@@ -107,4 +79,8 @@
     background-color: var(--color-primario)!important;
     color: var(--color-secundario)!important;
     font-weight: bold;
+}
+
+.warnings{
+    color: red;
 }

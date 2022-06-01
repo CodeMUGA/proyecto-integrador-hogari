@@ -98,7 +98,9 @@
 #pasos{ 
     border-right: var(--color-resaltar);
 }
-
+#img-cambio{
+    width: 250px;
+}
 
 
   /* Footer */

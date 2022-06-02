@@ -7,6 +7,7 @@ const descripcion=document.getElementById("Descripcion");
 const personas = document.getElementById("numeroPersonas");
 const tamanio = document.getElementById("tamano");
 const form=document.getElementById('form');
+const  mascota = document.getElementById('exampleRadios1');
 
 form.addEventListener('submit',e=>{
 
@@ -57,7 +58,7 @@ form.addEventListener('submit',e=>{
         parrafo.innerHTML="Enviado"; 
         var datos=[];
         
-function agregarDatosForm(nombreCiudad,propiedadUsuario,dineroUsuario,personaUsuario,descripcionUsuario,tamano){
+function agregarDatosForm(nombreCiudad,propiedadUsuario,dineroUsuario,personaUsuario,descripcionUsuario,tamano,mascota){
     var nuevoUsario={//Aqui se crea el objeto 
             ciudad:nombreCiudad,
             tipo:propiedadUsuario,
@@ -65,6 +66,7 @@ function agregarDatosForm(nombreCiudad,propiedadUsuario,dineroUsuario,personaUsu
             personas:personaUsuario,
             descripcion:descripcionUsuario,
             tamanio:tamano,
+            mascota:mascota
         };
          console.log(nuevoUsario);
          datos.push(nuevoUsario);
@@ -78,8 +80,9 @@ function guardarDatosForm() {
      let dinero=document.getElementById('precio').value;
      let personas=document.getElementById('numeroPersonas').value;
      let descripcion=document.getElementById('Descripcion').value;
-    
-    agregarDatosForm(ciudad,propiedad,dinero,personas,descripcion);}
+     let tamanio=document.getElementById("tamano").value
+     let mascota = document.getElementById("exampleRadios1").value
+    agregarDatosForm(ciudad,propiedad,dinero,personas,descripcion, tamanio);}
 })
 
 
@@ -106,9 +109,3 @@ function validarExt(){ //Validamos extensiones permitidas
 }
 
 
-for(let element in nuevoUsario){
-    if(nuevoUsario[element] == "" || nuevoUsario[element] == ''){
-        nuevoUsario[element] = undefined;
-    } 
-   
-}

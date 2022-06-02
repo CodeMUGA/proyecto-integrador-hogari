@@ -40,7 +40,7 @@ addItem({'name':'Casa B',
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+item.name+'</h5>\n' +
         '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <p class="card-text">\n' +item.precio+' Renta/mensual</p>\n'+
+        '        <p class="card-text">\n' +item.precio+'  Renta/mensual</p>\n'+
         '    </div>\n' +
         '</div>\n' +
         '<br/>';
@@ -76,7 +76,7 @@ addItem2({'name':'Casa B',
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+item.name+'</h5>\n' +
         '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <p class="card-text">\n' +item.precio+' Renta/mensual</p>\n'+
+        '        <p class="card-text">\n' +item.precio+'  Renta/mensual</p>\n'+
         '    </div>\n' +
         '</div>\n' +
         '<br/>';

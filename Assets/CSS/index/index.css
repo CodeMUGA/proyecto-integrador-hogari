@@ -98,6 +98,16 @@
 #pasos{ 
     border-right: var(--color-resaltar);
 }
+#img-cambio{
+    width: 250px;
+}
+li{
+    text-align: center;
+}
+#nombRes{
+    color: var(--color-resaltar);
+}
+
 
 
 

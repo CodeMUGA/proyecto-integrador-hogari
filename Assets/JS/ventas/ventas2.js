@@ -1,5 +1,5 @@
 function addItem(item){
-    const itemHTML = '<div class="card" style="width: 20rem;box-shadow:10px 10px  10px gray;">\n' +
+    const itemHTML = '<div class="card"style="width: 20rem;box-shadow:10px 10px  10px gray;">\n' +
         '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body">\n' +
         '        <h5 class="card-title">'+item.name+'</h5>\n' +

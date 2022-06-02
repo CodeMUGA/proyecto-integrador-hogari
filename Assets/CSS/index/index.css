@@ -101,6 +101,14 @@
 #img-cambio{
     width: 250px;
 }
+li{
+    text-align: center;
+}
+#nombRes{
+    color: var(--color-resaltar);
+}
+
+
 
 
   /* Footer */

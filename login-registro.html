@@ -9,13 +9,14 @@
   <!-- Iconos de bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- Cargamos bootstrap desde el CDN -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!--Cargamos los estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+  <!--Cargamos los estilos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Assets/css/estilos.css">
   <link rel="stylesheet" href="Assets/css/registro/registro.css">
+  <link rel="stylesheet" href="Assets/CSS/spinner.css">
 
 </head>
 
@@ -54,6 +55,7 @@
             <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
           </li>
           <a href="Registro.html" class="btn btn-primary btn-signup">Sign Up</a>
+          <p class="" id="validacion"></p>
         </ul>
       </div>
     </div>
@@ -67,113 +69,54 @@
                       <div class="logo">
                         <img src="Assets/img/hogari-logo.png" width="80%" class='img-fluid my-3 bg-light p-3' alt="">
                       </div>
-                      <form class="rounded bg-white shadow p-5" id="form">
-                        <h3 class="text-dark fw-bold fs-4 mb-2">Registro</h3>
-                        <div class="fw-normal text-muted mb-4">¿Ya tienes cuenta? <a href="login-registro.html">Inicia sesión</a></div>
-              
-                        <div class="form-floating mb-3">
-                          <!-- Nombre -->
-                          <input type="text" class="form-control" id="name" placeholder="Nombre completo">
-                          <label for="nombre" class="form-label">Nombre (s)</label>
-                        </div>
-              
-              
-                        <div class="form-floating mb-3">
-                          <!-- Apellido -->
-                          <input type="text" class="form-control" id="apellido" placeholder="Primer apellido">
-                          <label for="apellido" class="form-label">Apellido Paterno</label>
-                        </div>
-              
-                        <div class="form-floating mb-3">
-                          <!-- Apellido -->
-                          <input type="text" class="form-control" id="apellido2" placeholder="Primer apellido">
-                          <label for="apellido2" class="form-label">Apellido Materno</label>
-                        </div>
-              
+                      <form class="rounded bg-white shadow p-5" id="form-login">
+                        <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
+                        <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
                         <div class="form-floating mb-3">
                           <!-- Email -->
-              
                           <input type="email" class="form-control" 
                           id="email" placeholder="ejemplo@email.com">
                           <label for="email" class="form-label">Ejemplo@correo.com</label>
                         </div>
-              
-              
                         <div class="form-floating mb-3">
                           <!-- password -->
                           <input type="password" class="form-control" id="password" placeholder="Contraseña">
                           <label for="password" class="form-label">Contraseña</label>
-              
                         </div>
+                        <!-- olvide contraseña link -->
                         <div class="form-floating mb-3">
-                          <!-- repetir password -->
-                          <input type="password" class="form-control" id="password2" placeholder=" Confirmar contraseña">
-                          <label for="password2" class="form-label">Repetir contraseña</label>
+                          <a href="#" class="text-muted">Olvidé mi contraseña</a>
                         </div>
-                        <div class="mt-2 text-end">
-                          <!-- checkbox -->
+                        <!-- checkbox recordar contraseña -->
+                        <div class="form-floating mb-3">
                           <div class="custom-control custom-checkbox">
                             <input type="checkbox" class="custom-control-input" id="customCheck1">
-                            <label class="custom-control-label" for="customCheck1">Acepto los términos y condiciones</label>
+                            <label class="custom-control-label" for="customCheck1">Recordar contraseña</label>
                           </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-signup w-100 my-4" id="btnSubmit">Enviar</button>
+                        <button type="submit" class="btn btn-primary btn-signup w-100 my-4" id="btn-login">Iniciar sesión</button>
                         <p class="warnings" id="warnings"></p>
+
+                        <div  id="spinner">
+                          <div class="sk-chase">
+                              <div class="sk-chase-dot"></div>
+                              <div class="sk-chase-dot"></div>
+                              <div class="sk-chase-dot"></div>
+                              <div class="sk-chase-dot"></div>
+                              <div class="sk-chase-dot"></div>
+                              <div class="sk-chase-dot"></div>
+                          </div>
+                      </div>
+
                       </form>
                     </div>
                   </div>
-
             </div>
         </div>
     </section> <!-- Termina section -->
 
-
-    <!-- Modal -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-      <div class="modal-dialog ">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
-            <form class="" id="form">
-              <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
-              <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
-              <div class="form-floating mb-3">
-                <!-- Email -->
-                <input type="email" class="form-control" 
-                id="email" placeholder="ejemplo@email.com">
-                <label for="email" class="form-label">Ejemplo@correo.com</label>
-              </div>
-              <div class="form-floating mb-3">
-                <!-- password -->
-                <input type="password" class="form-control" id="password" placeholder="Contraseña">
-                <label for="password" class="form-label">Contraseña</label>
-              </div>
-              <!-- olvide contraseña link -->
-              <div class="mb-3">
-                <a href="#" class="text-muted">Olvidé mi contraseña</a>
-              </div>
-              <!-- checkbox recordar contraseña -->
-              <div class="form-floating mb-3">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="Check1">
-                  <label class="custom-control-label" for="Check1">Recordar contraseña</label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-signup my-4" id="toastBtn"
-                data-bs-dismiss="modal">Iniciar sesión</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </div> <!-- Fin del modal de login -->
-
+  
+   
+  
 
   <!-- toast -->
   <section>
@@ -196,7 +139,7 @@
 
 
   <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
-    <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
+    <p>Hogari &copy; 2022 Todos los derechos Reservados</p>
   </footer> <!-- Termina footer -->
   <!-- sweet alert2 import -->
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
@@ -207,8 +150,10 @@
     integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
     crossorigin="anonymous"></script>
   <!-- Estos son scripts para los efectos y funcione chido la página ok? -->
-  <script src="/Assets/JS/formulario/formulario.js"></script>
-  <script src="Assets/js/toast.js"></script>
+  <!-- <script src="/Assets/JS/formulario/formulario.js"></script> -->
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script src="Assets/js/toast.js"></script> -->
+  <script src='assets/js/login-inicio/login.js'></script>
   <!-- <script src='assets/js/main.js'></script> -->
   <!-- <script src="Assets/js/toast.js"></script> -->
 

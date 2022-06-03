@@ -55,6 +55,9 @@ form.addEventListener("submit", (e) => {
       return datos;
     }
 
+<<<<<<< HEAD
+})
+=======
     document
       .querySelector("#btnSubmit")
       .addEventListener("click", guardarDatosForm);
@@ -74,3 +77,4 @@ form.addEventListener("submit", (e) => {
     }
   }
 });
+>>>>>>> 480dfec52bc1f7eef13fa099bf2445c1ebee983a

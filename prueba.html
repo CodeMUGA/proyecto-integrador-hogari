@@ -6,109 +6,113 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Cargamos bootstrap desde el CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!--Cargamos los iconos de boostrap-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="/Assets/CSS/contacto/contacto.css">
+   <!-- <link rel="stylesheet" href="/Assets/CSS/contacto/contacto.css"> -->
+    <link rel="stylesheet" href="Assets/CSS/estilos.css"> 
+    <link rel="stylesheet" href="Assets/CSS/formulario/casaform.css">
+
     <title>preuba form</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+     <!-- Empieza Navbar -->
+     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
         <div class="container">
-            <a href="#" class="navbar-brand">Hogari</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
-                    <li class="nav-item">
-
-                        <a href="/index.html" class="nav-link active" aria-current="page">
-                            Inicio
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/ventas.html" class="nav-link"> Productos </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/formulario.html" class="nav-link"> Formulario </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/contacto.html" class="nav-link"> Contáctanos </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
-                    </li>
-                </ul>
-                <ul class="navbar-nav col-xs-4 border-mq">
-                    <li class="nav-item text-menu">
-                        <a href="#" class="nav-link"> API </a>
-                    </li>
-                    <li class="nav-item text-menu">
-                        <a href="#" class="nav-link"> Help </a>
-                    </li>
-                    <li class="nav-item text-menu">
-                        <a href="#" class="nav-link"> Login </a>
-                    </li>
-
-                    <a href="" class="btn btn-primary btn-signup">Sign Up</a>
-                </ul>
-            </div>
+          <a href="index.html" class="navbar-brand">
+            <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
+              <li class="nav-item">
+                <!--La clase active se debe de poner en cada página del en el navbar -->
+                <a href="/index.html" class="nav-link active" aria-current="page">
+                  Inicio
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/ventas.html" class="nav-link"> Productos </a>
+              </li>
+              <li class="nav-item">
+                <a href="/contacto.html" class="nav-link"> Contáctanos </a>
+              </li>
+              <li class="nav-item">
+                <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
+              </li>
+            </ul>
+            <ul class="navbar-nav col-xs-4 border-mq">
+              <li class="nav-item text-menu">
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
+              </li>
+              <a href="Registro.html" class="btn btn-primary btn-signup">Sign Up</a>
+            </ul>
+          </div>
         </div>
-    </nav>
+      </nav> <!-- navbar -->
 
-    <main>
-        <div class="container">
-        <div class="col">
-        <form class=" was-validated" id="form">
-            <div class="mb-4 row" id="form">
+
+<section>
+  <div>
+    <div class="banner-area">
+      <div class="content-area">
+      <div class="container">
+        <div class="row">
+          <div class="container-xl col-sm-8">
+
+            <form class="was-validated rounded bg-white shadow p-5" id="form">
+              <div class="mb-3" id="form">
                 <select class="form-select" required aria-label="select example" id="ciudad">
-                    <option value="">Seleciona una ciudad</option>
-                    <option value="gdl">Guadalajara</option>
-                    <option value="cdmx">CDMX</option>
-                    <option value="que">QUERETARO</option>
+                  <option value="">Seleciona una ciudad</option>
+                  <option value="gdl">Guadalajara</option>
+                  <option value="cdmx">CDMX</option>
+                  <option value="que">QUERETARO</option>
                 </select>
-            </div>
-
-            <div class="mb-4 row" id="form">
+              </div>
+              <div class="mb-3" id="form">
                 <select class="form-select" required aria-label="select example" id="propiedad">
-                    <option value="">Seleciona un tipo de propiedad</option>
-                    <option value="dep">Departamento</option>
-                    <option value="ofi">Oficina</option>
-                    <option value="cas">Casa</option>
+                  <option value="">Seleciona un tipo de propiedad</option>
+                  <option value="dep">Departamento</option>
+                  <option value="ofi">Oficina</option>
+                  <option value="cas">Casa</option>
                 </select>
-            </div>
-            <div class="mb-3 row">
-                <input type="number" class="form-control" id="dinero"  required min="1000" placeholder="Cuanto quieres rentar"> 
-            </div>
-            <div class="mb-4 row">
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="dinero" required min="1000">
+                <label class="form-label">Cuanto quieres rentar</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="personas" required min="0">
                 <label class="form-label">Cuantas personas viven contigo</label>
-                <input type="number" class="form-control" id="personas"  required min="0" max="10">
-            </div>
-            <div class="mb-4 row">
-               
-                <input type="text" class="form-control" id="descripcion"  required max="250" placeholder="Describenos tu hogar">
-            </div>
-            <div class="mb-4 row">
-                <input type="number" class="form-control" id="m2"  min="100" required placeholder="Cuanto mide tu terreno">
-            </div>
-            <div class="col-4 row">
-                <button class="btn btn-primary" type="submit" onclick="guardarDatosForm()">Enviar formulario</button>
-            </div>
-        </form>
-        <!---->
+              </div>
+              <div class="form-floating mb-3">
+                <input type="text" class="form-control" id="descripcion" required max="250">
+                <label class="form-label">Describenos tu hogar</label>
+              </div>
+              <div class="form-floating mb-3">
+                <input type="number" class="form-control" id="m2" required min="100">
+                <label class="form-label">Cuanto mide tu terreno</label>
+              </div>
+              <div class="mb-3">
+                <button class="btn btn-primary btn-signup" type="submit" onclick="guardarDatosForm()">Enviar formulario</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      </div>
     </div>
-    </div>
+  </div>
+</section>
 
-    </main>
 
     <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
-        <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
+        <p>Hogari &copy; 2022 Todos los derechos Reservados</p>
     </footer>
 
 

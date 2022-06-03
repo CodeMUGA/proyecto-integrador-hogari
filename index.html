@@ -14,6 +14,10 @@
     Cargamos los estilos -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!--Cargamos la libreria de aos NO MOVER-->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!--NO MOVER-->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="Assets/css/estilos.css">
   <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -23,10 +27,11 @@
 <body>
 
   <!-- Empieza Navbar -->
-
   <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
     <div class="container">
-      <a href="#" class="navbar-brand">Hogary</a>
+      <a href="index.html" class="navbar-brand">
+        <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+      </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -42,9 +47,7 @@
           <li class="nav-item">
             <a href="/ventas.html" class="nav-link"> Productos </a>
           </li>
-          <li class="nav-item">
-            <a href="/formulario.html" class="nav-link"> Formulario </a>
-          </li>
+
           <li class="nav-item">
             <a href="/contacto.html" class="nav-link"> Contáctanos </a>
           </li>
@@ -53,18 +56,13 @@
           </li>
         </ul>
         <ul class="navbar-nav col-xs-4 border-mq">
-          <li class="nav-item text-menu">
-            <a href="#" class="nav-link"> API </a>
-          </li>
-          <li class="nav-item text-menu">
-            <a href="#" class="nav-link"> Help </a>
-          </li>
-          <li class="nav-item text-menu">
 
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
+
+          <li class="nav-item text-menu">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Iniciar sesión </a>
           </li>
 
-          <a href="" class="btn btn-primary btn-signup">Sign Up</a>
+          <a href="./formulario.html" class="btn btn-primary btn-signup">Únete</a>
         </ul>
       </div>
     </div>
@@ -79,8 +77,9 @@
             <h2 style="color:white ;">Una nueva vida a solo un click</h2>
             <!-- Formulario de busqueda -->
             <form class="form-inline my-2 my-lg-0">
-              <input class="form-control mr-sm-2" type="search" placeholder="¿Doonde deseas ir?" aria-label="Search">
+              <input class="form-control mr-sm-2" type="search" placeholder="¿Dónde deseas ir?" aria-label="Search">
               <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+
             </form>
           </div>
         </div>
@@ -94,12 +93,12 @@
     <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col">
-          <h3 class="text-center">Nuestras ubicaciones</h3>
+          <h3 class="text-center" style="margin-bottom: 20px;font-size: 60px;">Nuestras ubicaciones</h3>
           <div class="owl-container">
             <div class="owl-carousel owl-theme">
               <div class="item">
                 <div class="card" style="width: 16rem;height: 450px;">
-                  <img src="assets/img/index/cdmx.jpg" class="card-img-top" alt="..." >
+                  <img src="assets/img/index/cdmx.jpg" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Ciudad de México</h5>
                     <p class="card-text">La Ciudad de México es la capital del país, de carácter vibrante, multifacético
@@ -123,7 +122,7 @@
               </div>
               <div class="item">
                 <div class="card" style="width: 16rem;height: 450px;">
-                  <img src="assets/img/index/mnt.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <img src="assets/img/index/mnt.jpg" class="card-img-top" alt="..." style="height: 170px;">
                   <div class="card-body">
                     <h5 class="card-title">Monterrey</h5>
                     <p class="card-text">El mercado inmobiliario de Monterrey es la joya del dinamismo inmobiliario en
@@ -134,7 +133,7 @@
               </div>
               <div class="item">
                 <div class="card" style="width: 16rem;height: 450px;">
-                  <img src="assets/img/index/gdl.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <img src="assets/img/index/gdl.jpg" class="card-img-top" alt="..." style="height: 170px;">
                   <div class="card-body">
                     <h5 class="card-title">Guadalajara</h5>
                     <p class="card-text">La Zona Metropolitana de Guadalajara (ZMG) representa una de las áreas urbanas
@@ -166,77 +165,93 @@
 
 
   <section>
-    <div class="container p-4">
-      <div class="row">
-        <div class="col-md-12 bg-dark p-5 text-white" style="text-align:center;font-size: 60px;">Encuentra tu siguente hogar ideal</div>
-        <div class="col-md-3 bg-dark text-center text-white p-4" >
-          <p class='text-justify fs-4'>Consigue un cambio en tu vida con estos simples cuatro pasos:</p>
-          <ul class="list-group list-unstyled fw-bold">
-            <li>1. Entra en nuestro citio</li>
-            <li>2. Busca en donde quieres vivir</li>
-            <li>3. Pide una cotizacion</li>
-            <li>4. Inicia una nueva vida</li>
-          </ul> 
+    <div class="row align-items-center">
+      <div class="col">
+
+
+        <div data-aos="fade-right"  data-aos-duration="3000">
+          <img src="/Assets/img/casa.jpg" alt="">
         </div>
-        <div class="col-md-9 bg-light" >
-         <p class="text-center py-5 my-2 h3">Ponle un cambio en tu vida</p>
-         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed quis nisi illo, odio nulla, ipsam quos repellat cum similique debitis dignissimos exercitationem quo voluptatibus? Perferendis deleniti id voluptatem voluptas quasi.</p>
-        </div>
+
+      </div>
+
+      <div class="col">
+        <p>Cambia tu vida con estos sencillos pasos:</p>
+        <ul>
+          <li>1.-Entra en nuestra página.</li>
+          <li>2.-Busca la ciudad que mas te guste.</li>
+          <li>3.-Encuentra el lugar de tus sueños.</li>
+          <li>4.-Da un simple click y cambia tu vida.</li>
+        </ul>
       </div>
     </div>
+
   </section>
+
+
   <!--Reseñas-->
-<section>
+  <section>
     <div class="container mt-5 mb-5">
       <div class="row">
         <div class="col">
-          <h3 class="text-center"><i class="bi bi-suit-heart"></i>Reseñas </h3>
+          <h3 class="text-center" style="margin-bottom: 20px;font-size: 40px;" id="square">Reseñas <br><i
+              class="bi bi-suit-heart"></i> </h3>
           <div class="owl-container">
             <div class="owl-carousel owl-theme">
               <div class="item">
-                <div class="card" style="width: 18rem;height: 150px;border:none ;">
-                  <div class="card-body">
-                    <h5 class="card-title">Ivan lopez hernandez</h5>
-                    <p class="card-text">Gracias a hogary pude encontrar la casa de mis sueño
-                    </p>
+                <div class="mb-3" style="max-width: 18rem;">
+                  <div class="card-body text-secondary">
+                    <h5 class="card-title">Mauricio Pérez</h5>
+                    <p class="card-text">Recomiendo Hogari. Todo claro y transparente desde el comienzo siempre informando cualquier
+                       movimiento de la propiedad. 
+                      Lo que más me gustó fue que informan quién será tu inquilino con sus antecedentes personales y de renta,
+                       cosa que no me pasaba con otras corredoras.</p>
                   </div>
                 </div>
+
               </div>
               <div class="item">
-                <div class="card" style="width: 18rem;height: 150px;border:none">
-                  <div class="card-body">
-                    <h5 class="card-title">Gustavo Lopez Lopez</h5>
-                    <p class="card-text">Es tan rapido como dar un click
-                    </p>
+                <div class="mb-3" style="max-width: 18rem;">
+                  <div class="card-body text-secondary">
+                    <h5 class="card-title">Bárbara Cooper</h5>
+                    <p class="card-text">Quiero agradecer por el increíble servicio de Hogari. Desde el primer día que me
+                       ayudaron absolutamente en todo para rentar el departamento, incluso yo estando en el extranjero. 
+                       Las fotos y vídeos que tomaron fueron profesionales y el departamento se rentó en menos de 6 días.</p>
                   </div>
                 </div>
+
               </div>
               <div class="item">
-                <div class="card" style="width: 18rem;height: 150px;border:none">
-                  <div class="card-body">
-                    <h5 class="card-title">Guillermo montaño goodman</h5>
-                    <p class="card-text">Hoy vivo sin miedo en una buena Zona
-                    </p>
+                <div class=" mb-3" style="max-width: 18rem;">
+                  <div class="card-body text-secondary">
+                    <h5 class="card-title">Roberto Picón</h5>
+                    <p class="card-text">Hogari fue rápido, atento y 100% digital. Me rentaron dos departamentos sin salir de la casa,
+                       ¡muchas gracias!.</p>
                   </div>
                 </div>
+
               </div>
               <div class="item">
-                <div class="card" style="width: 18rem;height: 150px;border:none">
-                  <div class="card-body">
-                    <h5 class="card-title">Saul Goodman</h5>
-                    <p class="card-text">Buenos precios
-                    </p>
+                <div class=" mb-3" style="max-width: 18rem;">
+                  <div class="card-body text-secondary">
+                    <h5 class="card-title">Susi Osorio</h5>
+                    <p class="card-text">Me ha encantado la experiencia en Hogari. Es todo amigable y bien explicado.
+                       Fácil de contactar y responden rápido. Estoy feliz porque en un mes ya tengo inquilino y todo ha
+                        funcionado bien.</p>
                   </div>
                 </div>
+
               </div>
               <div class="item">
-                <div class="card" style="width: 18rem;height: 150px;border:none">
-                  <div class="card-body">
-                    <h5 class="card-title">Joaquin hernandez suñiga</h5>
-                    <p class="card-text">Homary es buena opcion
-                    </p>
+                <div class=" mb-3" style="max-width: 18rem;">
+                  <div class="card-body ">
+                    <h5 class="card-title">Carlos Cuadra</h5>
+                    <p class="card-text">La experiencia con ustedes fue bastante buena, muy recomendable.
+                       El tema del contrato con la firma electrónica fue súper expedito a diferencia de otras que demoran más
+                        o tienen más pasos.</p>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -256,9 +271,9 @@
         </div>
         <div class="modal-body">
           <p class="text-center h3 py-3">Bienvenido de vuelta</p>
-          <form>
+          <form id="form">
             <div class="mb-3">
-              <label for="email" class="form-label">Correo Electrónico</label>
+              <label for="email" class="form-label">Correo electronico</label>
               <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico"
                 aria-describedby="emailHelp">
             </div>
@@ -266,6 +281,7 @@
               <label for="contraseña" class="form-label">Contraseña</label>
               <input type="password" class="form-control" id="contraseña">
             </div>
+            <p id="warnings"></p>
             <div class="mb-3 form-check">
               <input type="checkbox" class="form-check-input" id="exampleCheck1">
               <label class="form-check-label" for="exampleCheck1">Recordar la contraseña</label>
@@ -274,6 +290,9 @@
             <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn"
               data-bs-dismiss="modal">Iniciar sesión</button>
           </form>
+          <a href="./Registro.html" class="nav-link active" aria-current="page">
+            ¿No eres miembro? Regístrate
+          </a>
         </div>
         <div class="modal-footer">
 
@@ -298,10 +317,15 @@
         </div>
         <div class="toast-body">
           <p>Bienvenido de vuelta!</p>
+
         </div>
+
       </div>
+
+    </div>
     </div>
   </section> <!-- Fin del toast -->
+
 
 
 
@@ -309,17 +333,27 @@
   <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
     <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
   </footer> <!-- Termina footer -->
+  <script src="./Assets/JS/login/login.js"></script>
   <script src="/quieneSomos.html"></script>
   <script src="/Assets/JS/quieneSomos.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
   <!-- Estos son scripts para los efectos y funcione chido la página ok? -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script src='assets/js/jquery.min.js'></script>
   <script src='assets/js/jquery.mousewheel.min.js'></script>
   <script src='assets/js/owl.carousel.min.js'></script>
   <script src='assets/js/main.js'></script>
   <script src="Assets/js/toast.js"></script>
+  <script src="../lib/anime.min.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 </body>
 

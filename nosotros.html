@@ -1,722 +1,779 @@
 <!DOCTYPE html>
 <html lang="es-mx">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo Dinamita</title>
-    <!-- Iconos de bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!-- Cargamos bootstrap desde el CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- Cargamos los estilos -->
-    <link rel="stylesheet" href="Assets/CSS/estilos.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo Dinamita</title>
+  <!-- Iconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Cargamos bootstrap desde el CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Cargamos los estilos -->
+  <link rel="stylesheet" href="Assets/CSS/estilos.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
     <!-- Empieza Navbar -->
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
-        <div class="container">
-          <a href="#" class="navbar-brand">Hogary</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
-              <li class="nav-item">
-                  <!--La clase active se debe de poner en cada página del en el navbar -->
-                <a href="/index.html" class="nav-link active" aria-current="page">
-                  Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a href="/ventas.html" class="nav-link"> Productos </a>
-              </li>
-              <li class="nav-item">
-                <a href="/formulario.html" class="nav-link"> Formulario </a>
-              </li>
-              <li class="nav-item">
-                <a href="/contacto.html" class="nav-link"> Contáctanos </a>
-              </li>
-              <li class="nav-item">
-                <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
-              </li>
-            </ul>
-            <ul class="navbar-nav col-xs-4 border-mq">
-                <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> API </a>
-                  </li>
-                <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> Help </a>
-                  </li>
-                  <li class="nav-item text-menu">
-                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
-                  </li>
-             
-                <a href="" class="btn btn-primary btn-signup">Sign Up</a>
-            </ul>
-          </div>
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
+            <li class="nav-item">
+              <!--La clase active se debe de poner en cada página del en el navbar -->
+              <a href="/index.html" class="nav-link active" aria-current="page">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/ventas.html" class="nav-link"> Productos </a>
+            </li>
+  
+            <li class="nav-item">
+              <a href="/contacto.html" class="nav-link"> Contáctanos </a>
+            </li>
+            <li class="nav-item">
+              <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav col-xs-4 border-mq">
+  
+  
+            <li class="nav-item text-menu">
+              <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Iniciar sesión </a>
+            </li>
+  
+            <a href="./formulario.html" class="btn btn-primary btn-signup">Únete</a>
+          </ul>
         </div>
-      </nav>   <!-- navbar -->
-   
-      <main>
-        <div class="">
-            <div class="banner-area">
-                <div class="content-area">
-                   <div class="content">
-                      <h1 class="display-5 fw-bold">Inicia una nueva vida con nosotros</h1>
-                      <div class="col-lg-6 mx-auto">
-                        <p class="lead mb-4">Creamos Houm con la misión de poder rentar y vender inmuebles rápido, seguro y online.
-                      </p>
-                      <p>
-                          “Nuestro propósito es democratizar y transformar esta industria a algo accesible, agradable y fácil, brindándole acceso a todo el mundo a su hogar soñado, incluso a los que no pueden.”
-                      </p>
-                        <div class="justify-content-sm-center">
+      </div>
+    </nav> <!-- navbar -->
+
+  <main>
+    <div class=""  data-aos="fade-up">
+      <div class="banner-area">
+        <div class="content-area">
+          <div class="content">
+            <h1 class="display-5 fw-bold">Inicia una nueva vida con nosotros</h1>
+            <div class="col-lg-6 mx-auto">
+              <p class="lead mb-4">Creamos Houm con la misión de poder rentar y vender inmuebles rápido, seguro y
+                online.
+              </p>
+              <p>
+                “Nuestro propósito es democratizar y transformar esta industria a algo accesible, agradable y fácil,
+                brindándole acceso a todo el mundo a su hogar soñado, incluso a los que no pueden.”
+              </p>
+              <!-- <div class="justify-content-sm-center">
                           <button type="button" class="btn btn-primary px-4 gap-3 btn-menu">Primary button</button>
                           <button type="button" class="btn px-4 btn-menu">Secondary</button>
-                        </div>
-                      </div>
-                   </div>
-                </div>
+                        </div> -->
             </div>
           </div>
-      </main> <!-- Termina main -->
+        </div>
+      </div>
+    </div>
+  </main> <!-- Termina main -->
 
-      <section>
-          <div class="container-xl pt-4 pb-5">
-              <div class="row">
-                  <h3 class="text-center">Valores</h3>
-                  <div class="col-md-4">
-                      <div class="text-center fs-2"><i class="bi bi-heart"></i></div>
-                     Entregar nuestro esfuerzo y corazon en cada venta</div>
-                  <div class="col-md-4">
-                    <div class="text-center fs-2"><i class="bi bi-house-door"></i></div>
-                      Simpre responsables de lo que hacemos</div>
-                  <div class="col-md-4">
-                    <div class="text-center fs-2"><i class="bi bi-bar-chart-line"></i></div>
-                    Buscar los mejores precios para ti
-                </div>
-              </div>
-          </div>
-      </section>
+  <section class="py-5" data-aos="fade-up">
+    <div class="container">
+      <div class="row">
+        <h3 class="h1 text-center py-5">Nuestros valores</h3>
+        <div class="col-lg-4">
+          <h2 class="text-center">Nuestros productos</h2>
+          <div class="text-center display-5 py-2"><i class="bi bi-heart"></i></div>
 
-      <section> <!-- Empieza el acerca de nosotros -->
-          <div class="container">
-              <div class="row">
-                  <h2 class="text-center pb-5">¿Quienes somos?</h2>
-                  <div class="col-md-4">
-                      <img src="Assets/img/living.jpg" alt="" class="img-fluid rounded shadow-lg p-3 mb-5 bg-body">
-                  </div>
-                  <div class="col-md-8">
-                      <h3>Desarrolladores dinamita</h3>
-                      <p>Somos un grupo de desarrolladores full stack jovenes y con ganas de emprender</p>
-                      <p>Nos encargaremos de llevar tu proyecto al siguiente nivel</p>
-                      <p>Manejamos las ultimas tecnologias del mercado</p>
-                      <p>Tenemos precensia en las principales ciudades de Mexico</p>
-                      <p>Y recuerda que somos pura dinamita</p>
-                      </div>
-              </div>
-          </div>
-      </section> <!-- Termina el acerca de nosotros -->
+          <p class="lead text-center">
 
-<!-- Empiezan cards Miembros -->
-<section>
-      <div class="container px-4 py-5" id="custom-cards">
-        <h2 class="pb-2 border-top" style="text-align: center;">Equipo</h2>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+          </p>
+        </div>
 
-        <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/fotosEquipo/Ivan.jpeg');">
-              <div class="cards-responsive"></div>
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                        Ivan
-                    </a>
-                    
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                      <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
+        <div class="col-lg-4">
+          <h2 class="text-center">Nuestros productos</h2>
+          <div class="text-center display-5 py-2"><i class="bi bi-house-door"></i></div>
+          <p class="lead text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+          </p>
+        </div>
+        <div class="col-lg-4">
+          <h2 class="text-center">Nuestros productos</h2>
+          <div class="text-center display-5 py-2"><i class="bi bi-bar-chart-line"></i></div>
+          <p class="lead text-center">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, quos, quisquam.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Termina section -->
 
-                  </li>
-                  <li class="d-flex align-items-center">
-                      <a class="text-decoration-none text-light fs-2" href="#">
+  <section  data-aos="fade-right">
+    <div class="container">
+      <div class="row">
+        <h2 class="text-center pb-5">¿Quienes somos?</h2>
+        <div class="col-md-4"><img src="Assets/img/living.jpg" alt=""
+            class="img-fluid rounded shadow-lg p-3 mb-5 bg-body"></div>
+        <div class="col-md-8">
+          <h3>Desarrolladores dinamita</h3>
+          <p>
+            Somos un grupo de desarrolladores Fullstack jóvenes y con ganas de emprender Nos   encargaremos de llevar tu proyecto al siguiente nivel Manejamos las últimas tecnologías del mercado Tenemos presencia en las principales ciudades de México Y recuerda que somos pura dinamita.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--Quienes somos-->
+
+
+
+  <!-- Empiezan cards Miembros -->
+  <section data-aos="fade-up" class="text-cards">
+    <div class="container px-4 py-5" id="custom-cards">
+      <h2 class="pb-2 border-top text-center pt-3">Equipo 'Team Dinamita'</h2>
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('assets/img/fotosEquipo/Ivan.jpeg');">
+            <div class="cards-responsive"></div>
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal">
+                    Ivan
+                  </a>
+
+                </li>
+                <li  class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/ivan9318"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="http://linkedin.com/in/ivan-lopez-28238220b">
                     <i class="bi bi-linkedin"></i>
-                </a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-        
-          </div>
-       
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/fotosEquipo/Martin.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
-                <div class="cards-responsive"></div>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalMartin">
-                      Martín
                   </a>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
-
                 </li>
-                <li class="d-flex align-items-center">
-                    <a class="text-decoration-none text-light fs-2" href="#">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-                </li>
-                </ul>
-              </div>
+              </ul>
             </div>
           </div>
-    
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/Assets/img/fotosEquipo/ana.jpg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <div class="cards-responsive"></div>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalLucia">
-                      Ana Lucía
-                  </a>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
-
-                </li>
-                <li class="d-flex align-items-center">
-                    <a class="text-decoration-none text-light fs-2" href="#">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('assets/img/fotosEquipo/Adriana.jpeg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <div class="cards-responsive"></div>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalAdriana">
-                      Adriana
-                  </a>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
-
-                </li>
-                <li class="d-flex align-items-center">
-                    <a class="text-decoration-none text-light fs-2" href="#">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/Assets/img/EquipoDinamita-LOGO.jpeg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <h2 class="pt-5 mt-5 mb-4 fs-2 fw-bold text-center">Equipo Dinamita</h2>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('Assets/img/fotosEquipo/Gustavo.png');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <div class="cards-responsive"></div>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#modalGustavo">
-                      Gustavo
-                  </a>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
-
-                </li>
-                <li class="d-flex align-items-center">
-                    <a class="text-decoration-none text-light fs-2" href="#">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/Assets/img/fotosEquipo/Cynthia.jpeg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <div class="cards-responsive"></div>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalCynthia">
-                      Cynthia
-                  </a>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
-
-                </li>
-                <li class="d-flex align-items-center">
-                    <a class="text-decoration-none text-light fs-2" href="#">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/Assets/img/fotosEquipo/Sandra.jpeg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <div class="cards-responsive"></div>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalSandra">
-                      Sandra
-                  </a>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
-
-                </li>
-                <li class="d-flex align-items-center">
-                    <a class="text-decoration-none text-light fs-2" href="#">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
-          <div class="col">
-            <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg" style="background-image: url('/Assets/img/fotosEquipo/Sebastian.jpeg');">
-              <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
-                <div class="cards-responsive"></div>
-                <ul class="d-flex list-unstyled mt-auto">
-                  <li class="me-auto">
-                    <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal" data-bs-target="#exampleModalSebastian">
-                      Sebastian
-                  </a>
-                  </li>
-                  <li class="d-flex align-items-center me-3">
-                    <a class="text-decoration-none text-light fs-2" href=""><i class="bi bi-github"></i></a>
-
-                </li>
-                <li class="d-flex align-items-center">
-                    <a class="text-decoration-none text-light fs-2" href="#">
-                  <i class="bi bi-linkedin"></i>
-              </a>
-                </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-
         </div>
-      </div> <!-- Termina custom-cards -->
-    </section>
-
-
-  
-    <!-- Inician Modals -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center" id="exampleModalLabel">Iván</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/Ivan.jpeg" alt="">
-                    <p class="fw-bold pt-3 pb-2 text-center">Ing. Iván Alejandro López Montaño</p>
-                    <p class="text-justify">Soy graduado de la carrera de ingeniería biomédica, cuento con conocimientos para el desarrollo web de manera fullstack, además de conocimientos de manejo de herramientas para el data science.</p>
-                </div>
-                <div class="container ">
-                    <div class="row">
-                        <div class="col">  
-                            <li class="d-flex align-items-center ms-3">
-                                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/ivan9318"><i class="bi bi-github"></i></a>
-                            </li>
-                        </div>
-                        <div class="col">
-                            <li class="d-flex align-items-center">
-                                <a class="text-decoration-none fs-2" target="_blank" href="http://linkedin.com/in/ivan-lopez-28238220b">
-                              <i class="bi bi-linkedin"></i>
-                          </a>
-                            </li>
-                        </div>
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                        Cerrar
-                    </button>
-                </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('assets/img/fotosEquipo/Martin.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+              <div class="cards-responsive"></div>
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalMartin">
+                    Martín
+                  </a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/Martin1808"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://www.linkedin.com/in/eleno-martin-solis-avellaneda-aa330b107">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-        </div>
-    </div> <!--Primer modal de Ivan-->
-
-    <div class="modal fade" id="exampleModalMartin" tabindex="-1" aria-labelledby="exampleModalLabelMartin" aria-hidden="true">
-      <div class="modal-dialog">
-          <div class="modal-content">
-              <div class="modal-header">
-                  <h5 class="modal-title text-center" id="exampleModalLabelMartin">Martin</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                  <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/Martin.jpg" alt="">
-                  <p class="fw-bold pt-3 pb-2 text-center">Ing. Eleno Martín Solis Avellaenda </p>
-                  <p class="text-justify">Soy Martín Solis, apasionado por el desarrollo tecnológico y el mundo de la programación. Me gusta la natación y la música, y uno de mis sueños es poder aportar algo en beneficio de todas las personas de nuestro país..</p>
-              </div>
-              <div class="container ">
-                  <div class="row">
-                      <div class="col-md-3">  
-                          <li class="d-flex align-items-center ms-3">
-                              <a class="text-decoration-none text-dark fs-2" href="https://github.com/Martin1808"><i class="bi bi-github"></i></a>
-                          </li>
-                      </div>
-                      <div class="col-md-3">
-                          <li class="d-flex align-items-center">
-                              <a class="text-decoration-none fs-2" href="https://www.linkedin.com/in/eleno-martin-solis-avellaneda-aa330b107">
-                            <i class="bi bi-linkedin"></i>
-                        </a>
-                          </li>
-                      </div>
-                  </div>
-              </div>
-              <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                      Cerrar
-                  </button>
-              </div>
           </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('/Assets/img/fotosEquipo/ana.jpg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <div class="cards-responsive"></div>
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalLucia">
+                    Ana Lucía
+                  </a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/luciagutico"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://www.linkedin.com/in/luciagutico/">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('assets/img/fotosEquipo/Adriana.jpeg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <div class="cards-responsive"></div>
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalAdriana">
+                    Adriana
+                  </a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/Adistcruz"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://www.linkedin.com/in/adriana-santacruz-298a6823a/">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('/Assets/img/EquipoDinamita-LOGO.jpeg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 pb-5 mt-5 mb-4 fs-2 fw-bold text-center equipo-dinamita">Equipo Dinamita</h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('Assets/img/fotosEquipo/Gustavo.png');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <div class="cards-responsive"></div>
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#modalGustavo">
+                    Gustavo
+                  </a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/soygussil"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://www.linkedin.com/in/gustavo-silva-granados95/">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('/Assets/img/fotosEquipo/Cynthia.jpeg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <div class="cards-responsive"></div>
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalCynthia">
+                    Cynthia
+                  </a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/PimentelCynthia"><i class="bi bi-github"></i></a>
+
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://www.linkedin.com/in/cynthia-pimentel-3a8385225">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('/Assets/img/fotosEquipo/Sandra.jpeg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <div class="cards-responsive"></div>
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalSandra">
+                    Sandra
+                  </a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/sandramr1"><i class="bi bi-github"></i></a>
+
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://www.linkedin.com/in/sandra-mariely-ruiz-herrera-12a143106/">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('/Assets/img/fotosEquipo/Sebastian.jpeg');">
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <div class="cards-responsive"></div>
+              <ul data-aos="fade-down" class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <a class="text-decoration-none text-light h1 cursor-pointer" data-bs-toggle="modal"
+                    data-bs-target="#exampleModalSebastian">
+                    Sebastian
+                  </a>
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="https://github.com/CodeMUGA"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="d-flex align-items-center">
+                  <a class="text-decoration-none text-light fs-2" target="_blank" href="#">
+                    <i class="bi bi-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
-  </div> <!--Primer modal de Martin-->
+    </div> <!-- Termina custom-cards -->
+  </section>
 
-  <div class="modal fade" id="exampleModalLucia" tabindex="-1" aria-labelledby="exampleModalLabelLucia" aria-hidden="true">
+
+
+  <!-- Inician Modals -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-center" id="exampleModalLabelLucia">Ana Lucía</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/ana.jpg" alt="">
-                <p class="fw-bold pt-3 pb-2 text-center">Ana Lucía ... ...</p>
-                <p class="text-justify">.....</p>
-            </div>
-            <div class="container ">
-                <div class="row">
-                    <div class="col-md-3">  
-                        <li class="d-flex align-items-center ms-3">
-                            <a class="text-decoration-none text-dark fs-2" href=""><i class="bi bi-github"></i></a>
-                        </li>
-                    </div>
-                    <div class="col-md-3">
-                        <li class="d-flex align-items-center">
-                            <a class="text-decoration-none fs-2" href="#">
-                          <i class="bi bi-linkedin"></i>
-                      </a>
-                        </li>
-                    </div>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                    Cerrar
-                </button>
-            </div>
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Iván</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-    </div>
-</div> <!--Primer modal de Ana Lucía-->
-
-<div class="modal fade" id="exampleModalAdriana" tabindex="-1" aria-labelledby="exampleModalLabelAdriana" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title text-center" id="exampleModalLabelAdriana">Adriana</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/Ivan.jpeg" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Ing. Iván Alejandro López Montaño</p>
+          <p class="text-justify">Soy graduado de la carrera de ingeniería biomédica, cuento con conocimientos para el
+            desarrollo web de manera fullstack, además de conocimientos de manejo de herramientas para el data science.
+          </p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/ivan9318"><i
+                    class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank" href="http://linkedin.com/in/ivan-lopez-28238220b">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
           </div>
-          <div class="modal-body">
-              <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/adriana.jpeg" alt="">
-              <p class="fw-bold pt-3 pb-2 text-center">Adriana Itchel Santacruz Martínez</p>
-              <p class="text-justify">Soy Adriana Itchel Santacruz Martínez , tengo 20 años ,me gusta mucho hacer ejercicio,soy disciplinada ,me gusta leer novelas,aprender cosas nuevas.
-
-                Tome cursos de robótica cuando tenia 15 años en un lugar llamado “Punto México”, actualmente estoy tomando un bootcamp de programación full-stack en HTML, CSS Y JAVASCRIPT en GENERETION.
-                
-                Me gusta crear cosas nuevas,  trabajar en equipo , a nivel laboral no he desarrollado el liderazgo ,pero es algo que me gustaría desarrollar, al igual que lograr un nivel avanzado en Ingles , me adapto fácilmente a trabajar de forma presencial y ohm-office.
-                
-                Quiero un trabajo donde sea desarrolladora junior para empezar ,e ir creciendo laboralmente hasta llegar a ser líder de algún proyecto importante y tener la oportunidad de cumplir mis proyectos personales.  
-                </p>
-          </div>
-          <div class="container ">
-              <div class="row">
-                  <div class="col-md-3">  
-                      <li class="d-flex align-items-center ms-3">
-                          <a class="text-decoration-none text-dark fs-2" href=""><i class="bi bi-github"></i></a>
-                      </li>
-                  </div>
-                  <div class="col-md-3">
-                      <li class="d-flex align-items-center">
-                          <a class="text-decoration-none fs-2" href="#">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                      </li>
-                  </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                  Cerrar
-              </button>
-          </div>
-      </div>
-  </div>
-</div> <!--Primer modal de Adriana-->
-
-<div class="modal fade" id="exampleModalCynthia" tabindex="-1" aria-labelledby="exampleModalLabelCynthia" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title text-center" id="exampleModalLabel">Cynthia</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/Cynthia.jpeg" alt="">
-              <p class="fw-bold pt-3 pb-2 text-center">Ing. Cynthia Fabiola Pimentel Alvarez. 
-              </p>
-              <p class="text-justify">Habilidades técnicas: HTML, CSS y JS
-                Responsable, proactiva y siempre en busca del aprendizaje y mejora. 
-                </p>
-          </div>
-          <div class="container ">
-              <div class="row">
-                  <div class="col-md-3">  
-                      <li class="d-flex align-items-center ms-3">
-                          <a class="text-decoration-none text-dark fs-2" href="https://github.com/PimentelCynthia"><i class="bi bi-github"></i></a>
-                      </li>
-                  </div>
-                  <div class="col-md-3">
-                      <li class="d-flex align-items-center">
-                          <a class="text-decoration-none fs-2" href="https://www.linkedin.com/in/cynthia-pimentel-3a8385225">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                      </li>
-                  </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                  Cerrar
-              </button>
-          </div>
-      </div>
-  </div>
-</div> <!--Primer modal de Cinthya-->
-
-<div class="modal fade" id="modalGustavo" tabindex="-1" aria-labelledby="modalGustavoLabel" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title text-center" id="modalGustavoLabel">Gustavo</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/Gustavo.png" alt="">
-              <p class="fw-bold pt-3 pb-2 text-center">Gustavo Silva Granados</p>
-              <p class="text-justify">¡Hola! Soy Gustavo, tengo 27 años, soy ingeniero en computación, me encanta escuchar música, amo el dreampop, el indie, rock alternativo, me gusta viajar y conocer nuevos lugares. Me apasiona el desarrollo web, y busco ser un fullstack y espero en un futuro ser un arquitecto de software.</p>
-          </div>
-          <div class="container ">
-              <div class="row">
-                  <div class="col-md-3">  
-                      <li class="d-flex align-items-center ms-3">
-                          <a class="text-decoration-none text-dark fs-2" href=""><i class="bi bi-github"></i></a>
-                      </li>
-                  </div>
-                  <div class="col-md-3">
-                      <li class="d-flex align-items-center">
-                          <a class="text-decoration-none fs-2" href="#">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                      </li>
-                  </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                  Cerrar
-              </button>
-          </div>
-      </div>
-  </div>
-</div> <!--Primer modal de Gustavo-->
-
-<div class="modal fade" id="exampleModalSandra" tabindex="-1" aria-labelledby="exampleModalLabelSandra" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title text-center" id="exampleModalLabelSandra">Sandra</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/Sandra.jpeg" alt="">
-              <p class="fw-bold pt-3 pb-2 text-center">Sandra Mariely Ruiz Herrera</p>
-              <p class="text-justify">Soy Sandra Ruiz, tengo 26 años. Me apasiona el arte y la tecnología y busco ser un desarrollador fullstack. Dentro del área de tecnología también me apasiona mucho lo que es la ciberseguridad, buscando algún día ser parte de esta área.</p>
-          </div>
-          <div class="container ">
-              <div class="row">
-                  <div class="col-md-3">  
-                      <li class="d-flex align-items-center ms-3">
-                          <a class="text-decoration-none text-dark fs-2" href="https://github.com/sandramr1"><i class="bi bi-github"></i></a>
-                      </li>
-                  </div>
-                  <div class="col-md-3">
-                      <li class="d-flex align-items-center">
-                          <a class="text-decoration-none fs-2" href="https://www.linkedin.com/in/sandra-mariely-ruiz-herrera-12a143106/ ">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                      </li>
-                  </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                  Cerrar
-              </button>
-          </div>
-      </div>
-  </div>
-</div> <!--Primer modal de Sandra-->
-
-<div class="modal fade" id="exampleModalSebastian" tabindex="-1" aria-labelledby="exampleModalLabelSebastian" aria-hidden="true">
-  <div class="modal-dialog">
-      <div class="modal-content">
-          <div class="modal-header">
-              <h5 class="modal-title text-center" id="exampleModalLabelSebastian">Sebastian</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-              <img class='w-75 img-fluid mx-auto d-block'src="Assets/img/fotosEquipo/sebastian.jpeg" alt="">
-              <p class="fw-bold pt-3 pb-2 text-center">Sebastian .. ..</p>
-              <p class="text-justify">.. .. ..</p>
-          </div>
-          <div class="container ">
-              <div class="row">
-                  <div class="col-md-3">  
-                      <li class="d-flex align-items-center ms-3">
-                          <a class="text-decoration-none text-dark fs-2" href=""><i class="bi bi-github"></i></a>
-                      </li>
-                  </div>
-                  <div class="col-md-3">
-                      <li class="d-flex align-items-center">
-                          <a class="text-decoration-none fs-2" href="#">
-                        <i class="bi bi-linkedin"></i>
-                    </a>
-                      </li>
-                  </div>
-              </div>
-          </div>
-          <div class="modal-footer">
-              <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
-                  Cerrar
-              </button>
-          </div>
-      </div>
-  </div>
-</div> <!--Primer modal de Sebastian-->
-
-<!-- iniciamos modal de login -->
-<!-- El modal de login nos va servir emular un inicio de sesión -->
-<!-- Modal -->
-<div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        <p class="text-center h3 py-3">Bienvenido de vuelta</p>
-        <form>
-          <div class="mb-3">
-            <label for="email" class="form-label">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico" aria-describedby="emailHelp">
-          </div>
-          <div class="mb-3">
-            <label for="contraseña" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" id="contraseña">
-          </div>
-          <div class="mb-3 form-check">
-            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-            <label class="form-check-label" for="exampleCheck1">Recordar la contraseña</label>
-          </div>
-          <!-- <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastLogin">Iniciar sesión</button> -->
-          <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn" data-bs-dismiss="modal">Iniciar sesión</button>
-        </form>
-      </div>
-      <div class="modal-footer">
-        
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
       </div>
     </div>
   </div>
-</div> <!-- Fin del modal de login -->
+  <!--Primer modal de Ivan-->
 
-<!-- toast -->
-<section>
+  <div class="modal fade" id="exampleModalMartin" tabindex="-1" aria-labelledby="exampleModalLabelMartin"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabelMartin">Martin</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/Martin.jpg" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Ing. Eleno Martín Solis Avellaenda </p>
+          <p class="text-justify">Soy Martín Solis, apasionado por el desarrollo tecnológico y el mundo de la
+            programación. Me gusta la natación y la música, y uno de mis sueños es poder aportar algo en beneficio de
+            todas las personas de nuestro país..</p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-3">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/Martin1808"><i
+                    class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col-md-3">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank"
+                  href="https://www.linkedin.com/in/eleno-martin-solis-avellaneda-aa330b107">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-  <!-- ! Forma corta -->
-  <!-- Esto hará que aparezca en la parte inferior izquierda... -->
-  <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
+  <!--Primer modal de Martin-->
+
+  <div class="modal fade" id="exampleModalLucia" tabindex="-1" aria-labelledby="exampleModalLabelLucia"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabelLucia">Ana Lucía</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/ana.jpg" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Ana Lucia Gutiérrez Coronel</p>
+          <p class="text-justify">Mi nombre es Ana Lucía Gutiérrez Coronel, soy administradora contable, y futura socióloga. Apasionada por el aprendizaje, constantemente busco aprender habilidades nuevas y retadoras que me saquen de mi zona de confort.Mi camino como programadora apenas está empezando, pero planeo que se convierta en mi camino profesional.
+            Encuentro en la tecnología una oportunidad de vida. Comprender como se estructura el mundo digital en el que vivimos me brinda curiosidad. Y despierta mis ganas de sumar y aprender mucho de esta industria.
+            Me gustaría demostrar que las mujeres también podemos entrarle a tecnología, y aportar mucho en ello por esta razón me emociona todo lo que queda por aprender!
+            </p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-3">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/luciagutico"><i class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col-md-3">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank" href="https://www.linkedin.com/in/luciagutico/">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Primer modal de Ana Lucía-->
+
+  <div class="modal fade" id="exampleModalAdriana" tabindex="-1" aria-labelledby="exampleModalLabelAdriana"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabelAdriana">Adriana</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/adriana.jpeg" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Adriana Itchel Santacruz Martínez</p>
+          <p class="text-justify">Soy Adriana Itchel Santacruz Martínez , tengo 20 años ,me gusta mucho hacer
+            ejercicio,soy disciplinada ,me gusta leer novelas,aprender cosas nuevas.
+
+            Tome cursos de robótica cuando tenia 15 años en un lugar llamado “Punto México”, actualmente estoy tomando
+            un bootcamp de programación full-stack en HTML, CSS Y JAVASCRIPT en GENERETION.
+
+            Me gusta crear cosas nuevas, trabajar en equipo , a nivel laboral no he desarrollado el liderazgo ,pero es
+            algo que me gustaría desarrollar, al igual que lograr un nivel avanzado en Ingles , me adapto fácilmente a
+            trabajar de forma presencial y ohm-office.
+
+            Quiero un trabajo donde sea desarrolladora junior para empezar ,e ir creciendo laboralmente hasta llegar a
+            ser líder de algún proyecto importante y tener la oportunidad de cumplir mis proyectos personales.
+          </p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-3">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href=""><i class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col-md-3">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank" href="#">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Primer modal de Adriana-->
+
+  <div class="modal fade" id="exampleModalCynthia" tabindex="-1" aria-labelledby="exampleModalLabelCynthia"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabel">Cynthia</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/Cynthia.jpeg" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Ing. Cynthia Fabiola Pimentel Alvarez.
+          </p>
+          <p class="text-justify">Habilidades técnicas: HTML, CSS y JS
+            Responsable, proactiva y siempre en busca del aprendizaje y mejora.
+          </p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-3">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/PimentelCynthia"><i
+                    class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col-md-3">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank" href="https://www.linkedin.com/in/cynthia-pimentel-3a8385225">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Primer modal de Cinthya-->
+
+  <div class="modal fade" id="modalGustavo" tabindex="-1" aria-labelledby="modalGustavoLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="modalGustavoLabel">Gustavo</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/Gustavo.png" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Gustavo Silva Granados</p>
+          <p class="text-justify">¡Hola! Soy Gustavo, tengo 27 años, soy ingeniero en computación, me encanta escuchar
+            música, amo el dreampop, el indie, rock alternativo, me gusta viajar y conocer nuevos lugares. Me apasiona
+            el desarrollo web, y busco ser un fullstack y espero en un futuro ser un arquitecto de software.</p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-3">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/soygussil"><i class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col-md-3">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank" href="https://www.linkedin.com/in/gustavo-silva-granados95/">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Primer modal de Gustavo-->
+
+  <div class="modal fade" id="exampleModalSandra" tabindex="-1" aria-labelledby="exampleModalLabelSandra"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabelSandra">Sandra</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/Sandra.jpeg" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Sandra Mariely Ruiz Herrera</p>
+          <p class="text-justify">Soy Sandra Ruiz, tengo 26 años. Me apasiona el arte y la tecnología y busco ser un
+            desarrollador fullstack. Dentro del área de tecnología también me apasiona mucho lo que es la
+            ciberseguridad, buscando algún día ser parte de esta área.</p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-3">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/sandramr1"><i
+                    class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col-md-3">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank"
+                  href="https://www.linkedin.com/in/sandra-mariely-ruiz-herrera-12a143106/ ">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Primer modal de Sandra-->
+
+  <div class="modal fade" id="exampleModalSebastian" tabindex="-1" aria-labelledby="exampleModalLabelSebastian"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title text-center" id="exampleModalLabelSebastian">Sebastian</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img class='w-75 img-fluid mx-auto d-block' src="Assets/img/fotosEquipo/sebastian.jpeg" alt="">
+          <p class="fw-bold pt-3 pb-2 text-center">Sebastian Contreras</p>
+          <p class="text-justify">Desarrollador Java Full Stack con amor hacia el UX/UI. Geek desde la cuna y Gamer desde vidas pasadas. Si el enfoque no es hacia un bien, mejor que no sea desarrollado.</p>
+        </div>
+        <div class="container ">
+          <div class="row">
+            <div class="col-md-3">
+              <li class="d-flex align-items-center ms-3">
+                <a class="text-decoration-none text-dark fs-2" target="_blank" href="https://github.com/CodeMUGA"><i class="bi bi-github"></i></a>
+              </li>
+            </div>
+            <div class="col-md-3">
+              <li class="d-flex align-items-center">
+                <a class="text-decoration-none fs-2" target="_blank" href="#">
+                  <i class="bi bi-linkedin"></i>
+                </a>
+              </li>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary btn-modal" data-bs-dismiss="modal">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Primer modal de Sebastian-->
+
+ <!-- iniciamos modal de login -->
+  <!-- El modal de login nos va servir emular un inicio de sesión -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center h3 py-3">Bienvenido de vuelta</p>
+          <form id="form">
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo electronico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="contraseña" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="contraseña">
+            </div>
+            <p id="warnings"></p>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recordar la contraseña</label>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastLogin">Iniciar sesión</button> -->
+            <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn"
+              data-bs-dismiss="modal">Iniciar sesión</button>
+          </form>
+          <a href="./Registro.html" class="nav-link active" aria-current="page">
+            ¿No eres miembro? Regístrate 
+          </a>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Fin del modal de login -->
+
+  <!-- toast -->
+  <section>
+
+    <!-- ! Forma corta -->
+    <!-- Esto hará que aparezca en la parte inferior izquierda... -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
       <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-          <div class="toast-header">
-              <strong class="me-auto">Inicio de sesión</strong>
-              <small>Conexión exitosa...</small>
-              <!-- Para que se cierre el toast con data-bs-dismiss -->
-              <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
-          </div>
-          <div class="toast-body">
-              <p>Bienvenido de vuelta!</p>
-          </div>
-      </div>
-  </div>
-</section> <!-- Fin del toast -->
+        <div class="toast-header">
+          <strong class="me-auto">Inicio de sesión</strong>
+          <small>Conexión exitosa...</small>
+          <!-- Para que se cierre el toast con data-bs-dismiss -->
+          <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+          <p>Bienvenido de vuelta!</p>
+        </div> 
+      </div> 
+    </div>  
+  </section> <!-- Fin del toast -->
 
-      <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
-          <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
-      </footer> <!-- Termina footer -->
 
-      
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-      <script src="Assets/js/toast.js"></script>
+
+  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+    <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
+  </footer> <!-- Termina footer -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="Assets/js/toast.js"></script>
 </body>
+
 </html>

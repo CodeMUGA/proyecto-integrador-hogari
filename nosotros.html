@@ -17,48 +17,43 @@
 </head>
 
 <body>
-  <!-- Empieza Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
-    <div class="container">
-      <a href="index.html" class="navbar-brand">
-        <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
-      </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
-          <li class="nav-item">
-            <!--La clase active se debe de poner en cada página del en el navbar -->
-            <a href="/index.html" class="nav-link active" aria-current="page">
-              Inicio
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="/ventas.html" class="nav-link"> Productos </a>
-          </li>
-          <li class="nav-item">
-            <a href="/formulario.html" class="nav-link"> Formulario </a>
-          </li>
-          <li class="nav-item">
-            <a href="/contacto.html" class="nav-link"> Contáctanos </a>
-          </li>
-          <li class="nav-item">
-            <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
-          </li>
-        </ul>
-        <ul class="navbar-nav col-xs-4 border-mq">
-
-
-          <li class="nav-item text-menu">
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
-          </li>
-
-          <a href="" class="btn btn-primary btn-signup">Sign Up</a>
-        </ul>
+    <!-- Empieza Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
+            <li class="nav-item">
+              <!--La clase active se debe de poner en cada página del en el navbar -->
+              <a href="/index.html" class="nav-link active" aria-current="page">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/ventas.html" class="nav-link"> Productos </a>
+            </li>
+            <li class="nav-item">
+              <a href="/contacto.html" class="nav-link"> Contáctanos </a>
+            </li>
+            <li class="nav-item">
+              <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav col-xs-4 border-mq">
+            <li class="nav-item text-menu">
+              <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin">Iniciar sesión </a>
+            </li>
+            <a href="./formulario.html" class="btn btn-primary btn-signup">Únete</a>
+          </ul>
+        </div>
       </div>
-    </div>
+    </nav> <!-- navbar -->
   </nav> <!-- navbar -->
 
   <main>
@@ -699,6 +694,7 @@
   </div>
   <!--Primer modal de Sebastian-->
 
+<<<<<<< HEAD
   <!-- iniciamos modal de login -->
   <!-- El modal de login nos va servir emular un inicio de sesión -->
   <!-- Modal -->
@@ -741,6 +737,60 @@
   <!-- toast -->
   <section>
 
+=======
+ <!-- iniciamos modal de login -->
+  <!-- El modal de login nos va servir emular un inicio de sesión -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
+            <form class="" id="form">
+              <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
+              <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
+              <div class="form-floating mb-3">
+                <!-- Email -->
+                <input type="email" class="form-control" 
+                id="email" placeholder="ejemplo@email.com">
+                <label for="email" class="form-label">Ejemplo@correo.com</label>
+              </div>
+              <div class="form-floating mb-3">
+                <!-- password -->
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                <label for="password" class="form-label">Contraseña</label>
+              </div>
+              <!-- olvide contraseña link -->
+              <div class="form-floating mb-3">
+                <a href="#" class="text-muted">Olvidé mi contraseña</a>
+              </div>
+              <!-- checkbox recordar contraseña -->
+              <div class="form-floating mb-3">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Check1">
+                  <label class="custom-control-label" for="Check1">Recordar contraseña</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-signup my-4" id="toastBtn"
+                data-bs-dismiss="modal">Iniciar sesión</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div> <!-- Fin del modal de login -->
+
+
+  <!-- toast -->
+  <section>
+>>>>>>> 598062d50b84b78f4f8294c97fc9aa1c08530d97
     <!-- ! Forma corta -->
     <!-- Esto hará que aparezca en la parte inferior izquierda... -->
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
@@ -753,6 +803,7 @@
         </div>
         <div class="toast-body">
           <p>Bienvenido de vuelta!</p>
+<<<<<<< HEAD
         </div>
       </div>
     </div>
@@ -762,6 +813,19 @@
     <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
   </footer> <!-- Termina footer -->
 
+=======
+        </div> 
+      </div> 
+    </div>  
+  </section> <!-- Fin del toast -->
+
+
+
+  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+    <p>Hogari &copy; 2022 Todos los derechos Reservados</p>
+  </footer> <!-- Termina footer -->
+
+>>>>>>> 598062d50b84b78f4f8294c97fc9aa1c08530d97
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init();

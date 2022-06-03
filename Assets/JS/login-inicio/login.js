@@ -90,7 +90,7 @@ function iniciarSesion(e) {
         //timer: 2000,
         title: "Bienvenido",
         timer: 3000,
-        text: "Iniciando sesión",
+        text: "Sesión iniciada",
         icon: "success",
         //spinner loading
         //loade

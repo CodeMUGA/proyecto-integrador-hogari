@@ -124,11 +124,27 @@ function enviarEmail(e) {
       resetearFormulario();
     }, 5000);
   }, 3000);
+
+  imprimirDatos();
 }
+
+// json datos formulario
 
 //Function que reinicia form
 
 function resetearFormulario() {
   formulario.reset();
   iniciarApp();
+}
+
+// funcion que imprime en un json los datos del formulario
+function imprimirDatos() {
+  const datos = {
+    email: email.value,
+    asunto: asunto.value,
+    mensaje: mensaje.value,
+    nombre: nombre.value,
+    telefono: telefono.value,
+  };
+  console.log(datos);
 }

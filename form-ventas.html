@@ -10,86 +10,70 @@
     <!-- Cargamos bootstrap desde el CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <!-- Cargamos los estilos -->
-   <link rel="stylesheet" href="/proyecto-integrador-hogari/Assets/CSS/FormularioArrendador.css/FormularioArrendador.css">
+   <link rel="stylesheet" href="Assets/CSS/estilos.css">
 </head>
 <body>
 
+    <!-- Empieza Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
         <div class="container">
-          <a href="#" class="navbar-brand">LOGO HOGARI</a>
-        
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
+          <a href="index.html" class="navbar-brand">
+            <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
               <li class="nav-item">
-                  <!--La clase active se debe de poner en cada página del en el navbar -->
-                <a href="#" class="nav-link active" aria-current="page">
+                <!--La clase active se debe de poner en cada página del en el navbar -->
+                <a href="/index.html" class="nav-link active" aria-current="page">
                   Inicio
                 </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link"> Productos </a>
+                <a href="/ventas.html" class="nav-link"> Productos </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link"> Formulario </a>
+                <a href="/contacto.html" class="nav-link"> Contáctanos </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link"> Contactanos </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Acerca de nosotros </a>
+                <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
               </li>
             </ul>
             <ul class="navbar-nav col-xs-4 border-mq">
-                <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> API </a>
-                  </li>
-                <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> Help </a>
-                  </li>
-                  <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> Login </a>
-                  </li>
-             
-                <a href="" class="btn btn-primary btn-signup">Sign Up</a>
+              <li class="nav-item text-menu">
+                <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
+              </li>
+              <a href="Registro.html" class="btn btn-primary btn-signup">Sign Up</a>
             </ul>
           </div>
         </div>
-      </nav>   <!-- navbar -->
+      </nav> <!-- navbar -->
    
       <main>
           <div class="container">
               <div class="row">
                   <div class="p-5">
-
+                    <div class="col-md-6 mx-auto" class="form was-validated" id="form">
                    
-                    
-                    
-                    <div class="col-md-6 mx-auto" id="space">
-                    <form> <!-- formulario Space Overview  -->
+                    <form  id="form" class="needs-validation" novalidate> <!-- formulario Space Overview  -->
                       <h3>FORMULARIO DE ARRENDADOR</h3>
                         <br>
-                          
                       <!--CIUDAD-->
                       <label for="ciudad"> ¿En qué ciudad se encuentra tu propiedad?</label> 
                       
-                      <select class="form-select" aria-label="Ciudad">
-                        <option selected>Selecciona una ciudad</option>
-                        <option value="1">Ciudad de México</option>
-                        <option value="2">Guadalajara</option>
-                        <option value="3">Monterrey</option>
-                        <option value="4">Puebla</option>
+                      <select class="form-select"  required  aria-label="Ciudad" id="propiedadCiudad" name ="propiedadCiudad" >
+                        <option value="0" >Selecciona una ciudad</option>
+                        <option value="Ciudad de México">Ciudad de México</option>
+                        <option value="Guadalajara" >Guadalajara</option>
+                        <option value="Monterrey" >Monterrey</option>
+                        <option value="Puebla" >Puebla</option>
                       </select>
+    
+                      <div class="comentario1"></div>
+                      
                       <br>
                     
                       <!--Termina Ciudad-->
@@ -98,13 +82,14 @@
                       <!--Tipo de propiedad-->
                     
                       <label for="propiedad">¿Qué tipo de propiedad tienes?</label>
-                      <select class="form-select" aria-label="Tipo de propiedad">
+                      <select class="form-select" aria-label="Tipo de propiedad" id="propiedadTipo" value="Mark" required name="propiedadTipo">
                         
-                        <option selected>Selecciona una opción</option>
-                        <option value="1">Casa</option>
-                        <option value="2">Departamento</option>
-                        <option value="3">Oficina</option>
+                        <option value="0" id="propiedadTipo">Selecciona una opción</option>
+                        <option value="Casa"  id="propiedadTipo">Casa</option>
+                        <option value="Departamento"  id="propiedadTipo">Departamento</option>
+                        <option value="Odicina"  id="propiedadTipo">Oficina</option>
                       </select>
+                     
                       <!--Termina tipo de propiedad-->
 
                       <!--Costo-->
@@ -112,7 +97,9 @@
                       <label for="Costo">¿En cuánto quieres rentar tu propiedad?</label>
                       <div class="input-group mb-3">
                       <span class="input-group-text">$</span>
-                      <input type="text" class="form-control" aria-label="Dollar amount (with dot and two decimal places)">
+                      <input type="text" id="precio" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" required>
+                      <div class="invalid-feedback">Debe completar los datos</div>
+                      <div class="valid-feedback">Campo valido</div>
                       <small id="Costo" class="form-text text-muted">Introduce el costo que los inquilinos deberán pagar por mes en tu propiedad</small>
                       </div>
                       <!--Termina costo-->
@@ -120,46 +107,37 @@
                     
                       <div class="form-group"> <!--Lugares disponibles -->
                         <label for="inputAddress">¿Para cuántas personas es la capacidad de tu propiedad?</label>
-                        <input type="number" class="form-control" id="inputAddress" placeholder="2" aria-describedby="lugaresDisponibles" min="1">
+                        <input type="text" class="form-control" id="numeroPersonas" placeholder="2" aria-describedby="lugaresDisponibles" min="1" required>
+                        <div class="invalid-feedback">Debe completar los datos</div>
+                        <div class="valid-feedback">Campo valido</div>
                         <small id="lugaresDisponibles" class="form-text text-muted">Numero de inquilinos</small>
                       </div> 
                       <br>
                       <!--Termina lugares disponibles-->
 
-                      <!-- Mascotas  -->
-                    <label>¿Aceptas mascotas en tu propiedad?</label>
-                    <div class="form-check form-amue">
-                        <input class="form-check-input amue" type="radio" name="amue" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                          Si
-                        </label>
-                      </div>
-                      <div class="form-check form-amue">
-                        <input class="form-check-input amue" type="radio" name="amue" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                          No
-                        </label>
-                      </div>  <!--Termina Mascotas-->
-                      <br>
 
                       <!--Inicia Texto descipcion-->
                       <div class="form-group">
                         <label for="exampleFormControlTextarea1">Describenos las características de tu propiedad</label>
-                        <textarea class="form-control" id="Descripcion" rows="3"></textarea placeholder="Agrega una breve descripción del area">
+                        <input type="text" class="form-control" id="Descripcion" rows="3" required>
+                        <div class="invalid-feedback">Debe completar los datos</div>
+                        <div class="valid-feedback">Campo valido</div>
                           <small id="Descripcion" class="form-text text-muted">Haz una descripcion de las características más importantes de tu propiedad.</small>
                         </div> <!--Termina texto-->
                      
                       <br>
                     <div class="form-group"> <!-- Tamaño de la propiedad -->
                         <label for="inputAddress">Introduce el tamaño de tu propiedad en metros cuadrados</label>
-                        <input type="number" class="form-control" id="tamano" placeholder="50 m2" min="1">
+                        <input type="number" class="form-control" id="tamano" placeholder="50 m2" min="1" required >
+                        <div class="invalid-feedback">Debe completar los datos</div>
+                        <div class="valid-feedback">Campo valido</div>
                       </div> <!-- Termina tamaño de propiedad -->
                       <br>
 
                       <!--Empieza imagen-->
-                      <label for="Imagenes">Ajunta imagenes de tu propiedad</label>
+                      <label for="Imagenes">Adjunta imagenes de tu propiedad</label>
                       <div class="input-group mb-3">
-                        <input type="file" class="form-control" id="inputGroupFile02">
+                        <input type="file" class="form-control"  id="inputGroupFile02" onchange="return validarExt()">
                         <label class="input-group-text" for="inputGroupFile02">Upload</label>
                         <small id="Descripcion" class="form-text text-muted">Selecciona imagenes adecuadas, en las que se aprecien las dimensiones de tu propiedad.</small>
 
@@ -167,7 +145,8 @@
                       <!--Termina imagen-->
                       <br>
                       <div class="col-auto">
-                        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+                        <button type="submit"  id="btnSubmit" class="btnSubmit btn-primary mb-3" value="validar" >validar</button>
+                        
                       </div>
 
                     
@@ -175,17 +154,21 @@
                       <br>
 
                     </form> <!--Termina formulario-->
+
+                  
                 </div><!--Termina conteiner de formulario-->
-                      
+                <p class="warnings" id="warnings" name="warnings">En espera</p>
                     </div>
               </div>
           </div>
       </main>
+      
 
       <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
           <p>Inmobiliaria &copy; 2022 Todos los derechos Reservados</p>
       </footer> <!-- Termina footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src='assets/js/formArrendamiento/formArrendamiento.js'></script>
 </body>
 </html>

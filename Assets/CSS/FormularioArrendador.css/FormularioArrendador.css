@@ -80,3 +80,7 @@ h3{
     color: var(--color-secundario)!important;
     font-weight: bold;
 }
+
+.warnings{
+    color: red;
+}

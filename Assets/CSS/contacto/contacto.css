@@ -5,9 +5,14 @@
 
     --color-fuente:#000;
     --color-resaltar:#BF6900;
+    --fuente-main:'Roboto', sans-serif;
 }
 
 /* Empezamos con el navbar */
+
+*{
+    font-family: var(--fuente-main);
+}
 
 .navbar-color{ /* Clase que se aplicara al navbar */
     background-color: var(--color-secundario)!important;
@@ -28,8 +33,8 @@
     background-color: var(--color-primario)!important;
     border-color: var(--color-secundario)!important;
     transition: .2s ease-in-out 0s;
-    border-radius: .5px;
-    padding: 5px 40px;
+    border-radius: 10px !important;
+    padding: 5px 30px;
 }
 
 /* efecto de boton login */
@@ -63,8 +68,6 @@
     color:var(--color-secundario)!important;
 }
 
-
-
 /* Inicia Hero */
 
 .banner-area{
@@ -72,7 +75,7 @@
     height:70vh;
     background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/Assets/img/contactanos/contactanos.webp);
     background-size:cover;
-}        
+}          
 
 .content-area{
     height:100%;

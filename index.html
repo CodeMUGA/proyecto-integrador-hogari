@@ -27,7 +27,7 @@
 <body>
    <!-- Empieza Navbar -->
    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
-    <div class="container"> 
+    <div class="container">
       <a href="index.html" class="navbar-brand">
         <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
       </a>
@@ -57,15 +57,10 @@
           <li class="nav-item text-menu">
             <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Iniciar sesión </a>
           </li>
-
-          <a href="./formulario.html" class="btn btn-primary btn-signup">Únete</a>
-
-          
-
+          <a href="Registro.html" class="btn btn-primary btn-signup">Únete</a>
         </ul>
       </div>
-    </div>
-  </nav> <!-- navbar -->
+    </nav> <!-- navbar -->
 
   <main>
     <div>
@@ -168,24 +163,24 @@
 
 
   <section>
-    <div class="row align-items-center">
+    <div class="row align-items-start">
       <div class="col">
 
 
         <div data-aos="fade-right"  data-aos-duration="3000">
-          <img src="/Assets/img/casa.jpg" alt="">
+          <img src="/Assets/img/casa.jpg" alt="" style="border-radius:20px;height: 300px;margin-left: 30px;">
         </div>
 
       </div>
 
       <div class="col">
-        <p>Cambia tu vida con estos sencillos pasos:</p>
-        <ul>
-          <li>1.-Entra en nuestra página.</li>
-          <li>2.-Busca la ciudad que mas te guste.</li>
-          <li>3.-Encuentra el lugar de tus sueños.</li>
-          <li>4.-Da un simple click y cambia tu vida.</li>
-        </ul>
+        <div class=" margen-4ta-inicio col-md-12">
+          <div class='console-container'><span id='text'></span><div class='console-underscore' id='console'>&#95;</div></div>
+      </div>
+        <p class="cambio"><i class="bi bi-search"></i> Busca en nuestra pagina</p>
+        <p class="cambio"><i class="bi bi-map"></i> Ve nuestras opciones en la ciudad que mas te guste</p>
+        <p class="cambio"><i class="bi bi-hand-index"></i> Da un click en la opcion que mas te guste</p>
+        <p class="cambio"><i class="bi bi-house-heart"></i> Inicia una nueva vida</p>
       </div>
     </div>
 
@@ -247,7 +242,7 @@
               </div>
               <div class="item">
                 <div class=" mb-3" style="max-width: 18rem;">
-                  <div class="card-body ">
+                  <div class="card-body  text-secondary">
                     <h5 class="card-title">Carlos Cuadra</h5>
                     <p class="card-text">La experiencia con ustedes fue bastante buena, muy recomendable.
                        El tema del contrato con la firma electrónica fue súper expedito a diferencia de otras que demoran más
@@ -340,9 +335,10 @@
   <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
     <p>Hogari &copy; 2022 Todos los derechos Reservados</p>
   </footer> <!-- Termina footer -->
-  <script src="./Assets/JS/login/login.js"></script>
+  <script src="/Assets/JS/index/index.js"></script>
+ <!-- <script src="./Assets/JS/login/login.js"></script>
   <script src="/quieneSomos.html"></script>
-  <script src="/Assets/JS/quieneSomos.js"></script>
+  <script src="/Assets/JS/quieneSomos.js"></script>-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>

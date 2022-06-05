@@ -214,10 +214,25 @@
     transform: scale(1.1);
 
   }
+  /*Estilos de cambios de letra*/
+  @import url(https://fonts.googleapis.com/css?family=Khula:700);
 
-
-
-
+  .hidden {
+    opacity:0;
+  }
+  .console-container {
+   
+    font-family:Khula;
+    font-size:3em;
+    height:100px;
+    width:450px;
+  margin-bottom: 10px;
+    color:white;
+   
+  }
+.cambio{
+    font-size: 20px;
+}
 
 
 

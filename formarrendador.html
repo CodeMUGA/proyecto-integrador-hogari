@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Equipo Dinamita</title>
+    <title>Formulario para Arrendador</title>
     <!-- Iconos de bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <!-- Cargamos bootstrap desde el CDN -->
@@ -16,7 +16,7 @@
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
         <div class="container">
-          <a href="#" class="navbar-brand">LOGO HOGARI</a> 
+          <a href="" class="navbar-brand"><img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top"></a> 
         
           <button
             class="navbar-toggler"
@@ -41,10 +41,7 @@
                 <a href="#" class="nav-link"> Productos </a>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link"> Formulario </a>
-              </li>
-              <li class="nav-item">
-                <a href="#" class="nav-link"> Contactanos </a>
+                <a href="#" class="nav-link"> Contáctanos </a>
               </li>
               <li class="nav-item">
                 <a href="#" class="nav-link"> Acerca de nosotros </a>
@@ -52,11 +49,6 @@
             </ul>
             <ul class="navbar-nav col-xs-4 border-mq">
                 <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> API </a>
-                  </li>
-                <li class="nav-item text-menu">
-                    <a href="#" class="nav-link"> Help </a>
-                  </li>
                   <li class="nav-item text-menu">
                     <a href="#" class="nav-link"> Login </a>
                   </li>
@@ -119,7 +111,7 @@
                       <span class="input-group-text">$</span>
                       <input type="text" id="precio" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" required>
                       <div class="invalid-feedback">Debe completar los datos</div>
-                      <div class="valid-feedback">Campo valido</div>
+                      <div class="valid-feedback">Campo válido</div>
                       <small id="Costo" class="form-text text-muted">Introduce el costo que los inquilinos deberán pagar por mes en tu propiedad</small>
                       </div>
                       <!--Termina costo-->
@@ -129,8 +121,8 @@
                         <label for="inputAddress">¿Para cuántas personas es la capacidad de tu propiedad?</label>
                         <input type="text" class="form-control" id="numeroPersonas" placeholder="2" aria-describedby="lugaresDisponibles" min="1" required>
                         <div class="invalid-feedback">Debe completar los datos</div>
-                        <div class="valid-feedback">Campo valido</div>
-                        <small id="lugaresDisponibles" class="form-text text-muted">Numero de inquilinos</small>
+                        <div class="valid-feedback">Campo válido</div>
+                        <small id="lugaresDisponibles" class="form-text text-muted">Número de inquilinos</small>
                       </div> 
                       <br>
                       <!--Termina lugares disponibles-->
@@ -156,8 +148,8 @@
                         <label for="exampleFormControlTextarea1">Describenos las características de tu propiedad</label>
                         <input type="text" class="form-control" id="Descripcion" rows="3" required>
                         <div class="invalid-feedback">Debe completar los datos</div>
-                        <div class="valid-feedback">Campo valido</div>
-                          <small id="Descripcion" class="form-text text-muted">Haz una descripcion de las características más importantes de tu propiedad.</small>
+                        <div class="valid-feedback">Campo válido</div>
+                          <small id="Descripcion" class="form-text text-muted">Haz una descripción de las características más importantes de tu propiedad.</small>
                         </div> <!--Termina texto-->
                      
                       <br>
@@ -165,22 +157,22 @@
                         <label for="inputAddress">Introduce el tamaño de tu propiedad en metros cuadrados</label>
                         <input type="text" class="form-control" id="tamano" placeholder="50 m2" min="1" required >
                         <div class="invalid-feedback">Debe completar los datos</div>
-                        <div class="valid-feedback">Campo valido</div>
+                        <div class="valid-feedback">Campo válido</div>
                       </div> <!-- Termina tamaño de propiedad -->
                       <br>
 
                       <!--Empieza imagen-->
-                      <label for="Imagenes">Adjunta imagenes de tu propiedad</label>
+                      <label for="Imagenes">Adjunta imágenes de tu propiedad</label>
                       <div class="input-group mb-3">
                         <input type="file" class="form-control"  id="inputGroupFile02" onchange="return validarExt()">
                         <label class="input-group-text" for="inputGroupFile02">Upload</label>
-                        <small id="Descripcion" class="form-text text-muted">Selecciona imagenes adecuadas, en las que se aprecien las dimensiones de tu propiedad.</small>
+                        <small id="Descripcion" class="form-text text-muted">Selecciona imágenes adecuadas, en las que se aprecien las dimensiones de tu propiedad.</small>
 
                       </div>
                       <!--Termina imagen-->
                       <br>
                       <div class="col-auto">
-                        <button type="submit"  id="btnSubmit" class="btnSubmit btn-primary mb-3" value="validar" >validar</button>
+                        <button type="submit"  id="btnSubmit" class="btnSubmit btn-primary mb-3" value="validar" >Validar</button>
                         
                       </div>
 

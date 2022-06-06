@@ -5,6 +5,7 @@ function addItem(item){
         '        <h5 class="card-title">'+item.name+'</h5>\n' +
         '        <p class="card-text">'+item.description+'</p>\n' +
         '        <p class="card-text">\n' +item.precio+' Renta/mensual</p>\n'+
+                    
         '    </div>\n' +
         '</div>\n' +
         '<br/>';

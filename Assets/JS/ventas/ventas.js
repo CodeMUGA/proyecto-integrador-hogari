@@ -12,25 +12,25 @@ function addItem(item){
     itemsContainer.innerHTML += itemHTML;
 }
 //tarjetas con imagenes y deecripciones de lso elementos en venta
-addItem({'name':'Casa en Guadalajara, Jalisco',
-    'img': '/Assets/img/CASA_RENTA.webp',
-    'description':'Casa en renta. Cuenta con dos pisos, y cochera en Av. Lopez Mateos','precio':'$20,000'});
+addItem({'name':'Casa A',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
 
-addItem({'name':'Recámara en Guadalajara, Jalisco',
-    'img':'/Assets/img/RECAMARA.jpg',
-    'description':'Recámara con cama matrimonial y baño incluido.','precio':' $8,000'})
+addItem({'name':'Casa B',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Cheese & Onion Chips','precio':' $1000000'})
 
-    addItem({'name':'Casa vacacional',
-    'img':'/Assets/img/casa2.jpg',
-    'description':'Casa a las afueras de Guadalajara','precio':'$30,000'});
+    addItem({'name':'Casa C',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
 /*
     addItem({'name':'Casa D',
     'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
     'description':'Orange and Apple juice fresh and delicious'});
     */
-    addItem({'name':'Departamento con balcón',
-    'img':'/Assets/img/BALCON.webp',
-    'description':'Departamento en zona sur de Guadalajara','precio':'$20,000'});
+    addItem({'name':'Casa E',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
 
    var contenido=document.getElementById("contenido");
 
@@ -48,25 +48,27 @@ addItem({'name':'Recámara en Guadalajara, Jalisco',
     itemsContainer.innerHTML += itemHTML;
 }
 //tarjetas con imagenes y deecripciones de lso elementos en venta
-addItem2({'name':'Casa en Guadalajara, Jalisco',
-    'img': '/Assets/img/CASA_RENTA.webp',
-    'description':'Casa en renta. Cuenta con dos pisos, y cochera en Av. Lopez Mateos','precio':'$20,000'});
+addItem2({'name':'Casa A',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
 
-addItem2({'name':'Recámara en Guadalajara, Jalisco',
-    'img':'/Assets/img/RECAMARA.jpg',
-    'description':'Recámara con cama matrimonial y baño incluido.','precio':' $8,000'})
+addItem2({'name':'Casa B',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Cheese & Onion Chips','precio':'$1000000'})
 
-    addItem2({'name':'Casa vacacional',
-    'img':'/Assets/img/casa2.jpg',
-    'description':'Casa a las afueras de Guadalajara','precio':'$30,000'});
+    addItem2({'name':'Casa C',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
 /*
-    addItem({'name':'Casa D',
+    addItem2({'name':'Casa D',
     'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
     'description':'Orange and Apple juice fresh and delicious'});
     */
-    addItem2({'name':'Departamento con balcón',
-    'img':'/Assets/img/BALCON.webp',
-    'description':'Departamento en zona sur de Guadalajara','precio':'$20,000'});
+    addItem2({'name':'Casa E',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});  
+   var contenido=document.getElementById("contenido");
+ 
 
    function addItem3(item){
     const itemHTML = '<div class="card" style="width: 20rem;box-shadow:10px 10px  10px gray;">\n' +
@@ -82,23 +84,24 @@ addItem2({'name':'Recámara en Guadalajara, Jalisco',
     itemsContainer.innerHTML += itemHTML;
 }
 //tarjetas con imagenes y deecripciones de lso elementos en venta
-addItem3({'name':'Casa en Guadalajara, Jalisco',
-    'img': '/Assets/img/CASA_RENTA.webp',
-    'description':'Casa en renta. Cuenta con dos pisos, y cochera en Av. Lopez Mateos','precio':'$20,000'});
+addItem3({'name':'Casa A',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
 
-addItem3({'name':'Recámara en Guadalajara, Jalisco',
-    'img':'/Assets/img/RECAMARA.jpg',
-    'description':'Recámara con cama matrimonial y baño incluido.','precio':' $8,000'})
+addItem3({'name':'Casa B',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Cheese & Onion Chips','precio':'1000000'})
 
-    addItem3({'name':'Casa vacacional',
-    'img':'/Assets/img/casa2.jpg',
-    'description':'Casa a las afueras de Guadalajara','precio':'$30,000'});
+    addItem3({'name':'Casa C',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
 /*
-    addItem({'name':'Casa D',
+    addItem3({'name':'Casa D',
     'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
     'description':'Orange and Apple juice fresh and delicious'});
     */
-    addItem3({'name':'Departamento con balcón',
-    'img':'/Assets/img/BALCON.webp',
-    'description':'Departamento en zona sur de Guadalajara','precio':'$20,000'});
+    addItem3({'name':'Casa E',
+    'img':'https://englishlive.ef.com/es-mx/blog/wp-content/uploads/sites/8/2019/03/partes-de-la-casa-en-ingles.jpg',
+    'description':'Orange and Apple juice fresh and delicious','precio':'$1000000'});
+   var contenido=document.getElementById("contenido");
    

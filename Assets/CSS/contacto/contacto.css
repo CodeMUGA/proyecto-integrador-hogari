@@ -1,0 +1,236 @@
+:root{ /* Custom propierties  */
+
+    --color-primario:#03364D;
+    --color-secundario:#FFF;
+
+    --color-fuente:#000;
+    --color-resaltar:#BF6900;
+    --fuente-main:'Roboto', sans-serif;
+}
+
+/* Empezamos con el navbar */
+
+*{
+    font-family: var(--fuente-main);
+}
+
+.navbar-color{ /* Clase que se aplicara al navbar */
+    background-color: var(--color-secundario)!important;
+    color:var(--color-fuente)!important;
+    font-weight: 500!important;
+    opacity: 0.9!important;
+}
+.text-menu a{
+    color:var(--color-fuente)!important;
+    transition: .2s ease-in-out 0s;
+}
+
+.text-menu a:hover{
+    color:var(--color-primario)!important;
+}
+
+.btn-signup{ /* Clase que se aplicara al boton de login */
+    background-color: var(--color-primario)!important;
+    border-color: var(--color-secundario)!important;
+    transition: .2s ease-in-out 0s;
+    border-radius: 10px !important;
+    padding: 5px 30px;
+}
+
+/* efecto de boton login */
+.btn-signup:hover{
+    /* button expand hover */
+    background-color: var(--color-resaltar)!important;
+    transform: scale(1.1);
+    
+
+}
+
+/* Linea que aparecera en menú responsive en celular */
+@media (max-width: 575px){
+    .border-mq{
+        border-top-style: groove; 
+        border-top-width: 1px;
+    }
+    .btn-signup{
+        margin-bottom: 30px;
+    }
+    
+}
+
+
+.btn-menu{
+    background-color: var(--color-primario)!important;
+    border-color: var(--color-secundario)!important;
+    transition: .2s ease-in-out 0s;
+    border-radius: .5px;
+    padding: 5px 40px;
+    color:var(--color-secundario)!important;
+}
+
+/* Inicia Hero */
+
+.banner-area{
+    width:100%;
+    height:70vh;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(/Assets/img/contactanos/contactanos.webp);
+    background-size:cover;
+}          
+
+.content-area{
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    text-align: center;
+}
+
+.content h1{
+    color:#fff;
+}
+
+.content p{
+    color:#ddd;
+}
+
+.content .btn{
+    border:none;
+    outline:none;
+    padding:15px;
+    margin-top:100px;
+    border-radius: 4px;
+    color:#eee;
+    font-size: 18px;
+    cursor: pointer;    
+    background:#222;             
+}
+
+/* Termina hero */
+.grupo{
+    
+}
+
+
+
+
+/* clases cards */
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
+
+.icon-square {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.5rem;
+    border-radius: .75rem;
+  }
+  
+  .rounded-4 { border-radius: .5rem; }
+  .rounded-5 { border-radius: 1rem; }
+  
+  .text-shadow-1 { text-shadow: 0 .125rem .25rem rgba(0, 0, 0, .25); }
+  .text-shadow-2 { text-shadow: 0 .25rem .5rem rgba(0, 0, 0, .25); }
+  .text-shadow-3 { text-shadow: 0 .5rem 1.5rem rgba(0, 0, 0, .25); }
+  
+  .card-cover {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .cards-responsive{
+    padding:90px !important;
+}
+  @media (max-width: 780px){
+      .cards-responsive{
+          padding:60px !important;
+      }
+  }
+
+  .btn-modal{
+    background-color: var(--color-primario)!important;
+    border-color: var(--color-secundario)!important;
+    transition: .2s ease-in-out 0s;
+    border-radius: .5px;
+    padding: 5px 40px;
+    color:var(--color-secundario)!important;
+  }
+
+
+  .btn-modal:hover{
+    
+
+    background-color: crimson!important;
+    transform: scale(1.1);
+
+  }
+/*Formulario*/
+
+#card{
+    padding-right: 10px;
+    border: solid white;
+}
+#btnSubmit{ /* Clase que se aplicara al boton de login */
+    background-color: var(--color-primario)!important;
+    border-color: var(--color-secundario)!important;
+    transition: .2s ease-in-out 0s;
+    border-radius: .5px;
+    padding: 5px 40px;
+    align-items: center;
+    margin-left: 65px;
+    margin-top: 20px;
+}
+
+/* efecto de boton login */
+#btnSubmit:hover{
+    /* button expand hover */
+    background-color: var(--color-resaltar)!important;
+    transform: scale(1.1);
+    
+
+}
+/*Efecto que se le aplicara a los inputs*/
+.form{
+    margin-left: 20px;
+}
+input{
+    margin-left: 30px;
+}
+
+
+
+input[type=text] {
+    border: none;
+    border-bottom: 2px solid var(--color-primario);
+    
+  }
+
+  
+
+
+
+
+.warnings{
+    width: 200px;
+    margin: auto;
+    color: red;
+    padding-top: 20px;
+    margin-left: 10px;
+    
+}
+
+
+  /* Footer */
+
+.footer-class{
+    background-color: var(--color-primario)!important;
+    color: var(--color-secundario)!important;
+    font-weight: bold;
+}

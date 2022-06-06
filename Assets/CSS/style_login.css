@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: lato,sans-serif;
+}
+body{
+    background-image: url(../Imagenes/Login/fondo_login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+}
+
+main{
+    /* background-color: #f8f9f9;*/
+    width: 100%;
+    padding: 20px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+
+.main_container{
+    background-color: #f8f9f9;
+    padding: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    position: relative;
+    border-radius: 20px;
+    
+}
+
+
+.help-block{
+    color: #03364D
+}
+main button{
+    width: 100%;
+    max-width: 800px;
+    padding: 5px;
+    background-color: #267C7C;
+    color:#f8f9f9;
+
+
+}

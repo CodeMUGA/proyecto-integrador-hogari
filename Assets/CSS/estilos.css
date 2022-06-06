@@ -217,12 +217,26 @@
 
 
 
+.imagen-casa{
+border-radius:3rem;
+height: 300px;
+padding: 1.5rem;
+    
+}
+
+@media (max-width: 768px){
+    .imagen-casa{
+        
+        width: 90%;
+    }
+}
 
 
 
+.console-container{
+    font-size: 2rem;
 
-
-
+}
 
 
 

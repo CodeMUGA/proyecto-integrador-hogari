@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inicio</title>
+  <title>Equipo Dinamita</title>
   <!-- Iconos de bootstrap -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
   <!-- Cargamos bootstrap desde el CDN -->
@@ -158,31 +158,53 @@
   </section>
 
   <section>
-    <div class="row align-items-start">
-      <div class="col">
-
-
-        <div data-aos="fade-right"  class="container mt-5 mb-5" data-aos-duration="3000">
-          <img src="./Assets/img/casa.jpg" alt="" style="border-radius:20px;height: 300px;margin-left: 30px;">
-        </div>
-
-      </div>
-
-      <div class="col">
-        <div class=" margen-4ta-inicio col-md-12">
-          <div class='console-container'><span id='text'></span>
-            <div class='console-underscore' id='console'>&#95;</div>
+    <div class="row justify-content-md-center">
+      <div class="col-md-3">
+        <div class="row">
+          <div data-aos="fade-right" data-aos-duration="3000">
+            <img class="imagen-casa" src="./Assets/img/casa.jpg" alt="">
           </div>
         </div>
-        <p class="cambio"><i class="bi bi-search"></i> Busca en nuestra pagina</p>
-        <p class="cambio"><i class="bi bi-map"></i> Ve nuestras opciones en la ciudad que mas te guste</p>
-        <p class="cambio"><i class="bi bi-hand-index"></i> Da un click en la opcion que mas te guste</p>
-        <p class="cambio"><i class="bi bi-house-heart"></i> Inicia una nueva vida</p>
+      </div>
+      <div class="col-md-3">
+        <div>
+          <div class="">
+
+
+
+
+          </div>
+
+          <div class="col">
+
+            <div class=" margen-4ta-inicio col-md-12">
+              <div class='console-container'><span id='text'></span>
+                <div class='console-underscore' id='console'> </div>
+              </div>
+            </div>
+            <p class="cambio"><i class="bi bi-search"></i> Busca en nuestra pagina</p>
+            <p class="cambio"><i class="bi bi-map"></i> Ve nuestras opciones en la ciudad que mas te guste</p>
+            <p class="cambio"><i class="bi bi-hand-index"></i> Da un click en la opcion que mas te guste</p>
+            <p class="cambio"><i class="bi bi-house-heart"></i> Inicia una nueva vida</p>
+          </div>
+        </div>
       </div>
     </div>
+  </section>
+
+  <section>
+    <div class="col-md-6 flex justify-content-between">
+
+    </div>
+  </section>
+  <section>
 
 
   </section>
+
+
+
+
 
 
   <!--Reseñas-->
@@ -226,8 +248,8 @@
                   <div class="card-body text-secondary">
                     <h5 class="card-title">Roberto Picón</h5>
                     <p class="card-text">Hogari fue rápido, atento y 100% digital. Me rentaron dos departamentos sin
-                      salir de la casa.
-                      ¡Muchas gracias!</p>
+                      salir de la casa,
+                      ¡muchas gracias!.</p>
                   </div>
                 </div>
 
@@ -263,132 +285,96 @@
   </section>
   <!-- iniciamos modal de login -->
   <!-- El modal de login nos va servir emular un inicio de sesión -->
-  <!-- Modal -->
+
+  <!-- Modal login -->
   <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog ">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
+          <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <p class="text-center h3 py-3">Bienvenido de vuelta</p>
-          <form id="form">
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo electrónico</label>
-              <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico"
-                aria-describedby="emailHelp">
+          <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
+          <form class="rounded bg-white p-5" id="form-login">
+            <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
+            <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
+            <div class="form-floating mb-3">
+              <!-- Email -->
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
+              <label for="email" class="form-label">Ejemplo@correo.com</label>
             </div>
-            <div class="mb-3">
-              <label for="contraseña" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="contraseña">
+            <div class="form-floating mb-3">
+              <!-- password -->
+              <input type="password" class="form-control" id="password" placeholder="Contraseña">
+              <label for="password" class="form-label">Contraseña</label>
             </div>
-            <p id="warnings"></p>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Recordar contraseña</label>
+            <!-- olvide contraseña link -->
+            <div class="form-floating mb-3">
+              <a href="#" class="text-muted">Olvidé mi contraseña</a>
             </div>
-            <!-- <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastLogin">Iniciar sesión</button> -->
-            <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn"
-              data-bs-dismiss="modal">Iniciar sesión</button>
+            <!-- checkbox recordar contraseña -->
+            <div class="form-floating mb-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                <label class="custom-control-label" for="customCheck1">Recordar contraseña</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-signup w-100 my-4" id="btn-login">Iniciar sesión</button>
+              <p class="warnings" id="warnings"></p>
+
+              <div id="spinner">
+                <div class="sk-chase">
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                </div>
+              </div>
+
           </form>
-          <a href="./Registro.html" class="nav-link active" aria-current="page">
-            ¿No eres miembro? Regístrate.
-          </a>
         </div>
         <div class="modal-footer">
-
-          <!-- Modal login -->
-          <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-            <div class="modal-dialog ">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
-                  <form class="rounded bg-white p-5" id="form-login">
-                    <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
-                    <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <!-- Email -->
-                      <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
-                      <label for="email" class="form-label">Ejemplo@correo.com</label>
-                    </div>
-                    <div class="form-floating mb-3">
-                      <!-- password -->
-                      <input type="password" class="form-control" id="password" placeholder="Contraseña">
-                      <label for="password" class="form-label">Contraseña</label>
-                    </div>
-                    <!-- olvide contraseña link -->
-                    <div class="form-floating mb-3">
-                      <a href="#" class="text-muted">Olvidé mi contraseña</a>
-                    </div>
-                    <!-- checkbox recordar contraseña -->
-                    <div class="form-floating mb-3">
-                      <div class="custom-control custom-checkbox">
-                        <input type="checkbox" class="custom-control-input" id="customCheck1">
-                        <label class="custom-control-label" for="customCheck1">Recordar contraseña</label>
-                      </div>
-                      <button type="submit" class="btn btn-primary btn-signup w-100 my-4" id="btn-login">Iniciar
-                        sesión</button>
-                      <p class="warnings" id="warnings"></p>
-
-                      <div id="spinner">
-                        <div class="sk-chase">
-                          <div class="sk-chase-dot"></div>
-                          <div class="sk-chase-dot"></div>
-                          <div class="sk-chase-dot"></div>
-                          <div class="sk-chase-dot"></div>
-                          <div class="sk-chase-dot"></div>
-                          <div class="sk-chase-dot"></div>
-                        </div>
-                      </div>
-
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div><!-- Fin del modal de login -->
-
-
-        <!-- toast -->
-        <section>
-          <!-- ! Forma corta -->
-          <!-- Esto hará que aparezca en la parte inferior izquierda... -->
-          <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
-            <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-              <div class="toast-header">
-                <strong class="me-auto">Inicio de sesión</strong>
-                <small>Conexión exitosa...</small>
-                <!-- Para que se cierre el toast con data-bs-dismiss -->
-                <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación"
-                  class="btn-close"></button>
-              </div>
-              <div class="toast-body">
-                <p>¡Bienvenido de vuelta!</p>
-
-              </div>
-
-            </div>
-
-          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
       </div>
     </div>
+  </div>
+  </div> <!-- Fin del modal de login -->
 
-  </div>
-  </div>
+
+  <!-- toast -->
+  <section>
+    <!-- ! Forma corta -->
+    <!-- Esto hará que aparezca en la parte inferior izquierda... -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
+      <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Inicio de sesión</strong>
+          <small>Conexión exitosa...</small>
+          <!-- Para que se cierre el toast con data-bs-dismiss -->
+          <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+          <p>Bienvenido de vuelta!</p>
+
+        </div>
+
+      </div>
+
+    </div>
+    </div>
   </section> <!-- Fin del toast -->
 
 
-  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
-    <p>Hogari &copy; 2022 Todos los derechos reservados</p>
-  </footer>
 
-  <script src="./Assets/JS/index/index.js"></script>
+  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+    <p>Hogari &copy; 2022 Todos los derechos Reservados</p>
+  </footer> <!-- Termina footer -->
+  <script src="./Assets/JS/login/login.js"></script>
+  <script src="/quieneSomos.html"></script>
+  <script src="/Assets/JS/quieneSomos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
     integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
     crossorigin="anonymous"></script>
@@ -407,6 +393,7 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
   <!-- <script src="Assets/js/toast.js"></script> -->
   <script src='assets/js/login-inicio/login.js'></script>
+  <script src='assets/js/index/app1.js'></script>
   <script>
     AOS.init();
   </script>

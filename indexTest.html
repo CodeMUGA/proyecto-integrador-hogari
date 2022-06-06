@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipo Dinamita</title>
+  <!-- Iconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Cargamos bootstrap desde el CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"> 
+  <!--Cargamos los estilos -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="Assets/css/estilos.css">
+  <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+  <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+</head>
+
+<body>
+    <!-- Empieza Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">
+          <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
+            <li class="nav-item">
+              <!--La clase active se debe de poner en cada página del en el navbar -->
+              <a href="/index.html" class="nav-link active" aria-current="page">
+                Inicio
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/ventas.html" class="nav-link"> Productos </a>
+            </li>
+            <li class="nav-item">
+              <a href="/contacto.html" class="nav-link"> Contáctanos </a>
+            </li>
+            <li class="nav-item">
+              <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
+            </li>
+          </ul>
+          <ul class="navbar-nav col-xs-4 border-mq">
+            <li class="nav-item text-menu">
+              <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Iniciar sesión </a>
+            </li>
+            <a href="Registro.html" class="btn btn-primary btn-signup">Únete</a>
+          </ul>
+        </div>
+      </div>
+    </nav> <!-- navbar -->
+
+  <main>
+    <div>
+      <div class="banner-area">
+        <div class="content-area">
+          <div class="content">
+            <h1 class="display-5 fw-bold">Hogari</h1>
+            <h2 style="color:white ;">Una nueva vida a solo un click</h2>
+            <!-- Formulario de busqueda -->
+            <form class="form-inline my-2 my-lg-0">
+              <input class="form-control mr-sm-2" type="search" placeholder="¿Doonde deseas ir?" aria-label="Search">
+              <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
+              <h2 style="color:white ;">Cambia tu vida, haz scroll</h2>
+              <i class="bi bi-arrow-down-circle-fill" style="color: white;"></i>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main> <!-- Termina main -->
+
+
+  <!-- empieza carousel -->
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col">
+          <h3 class="text-center" style="margin-bottom: 20px;font-size: 60px;">Nuestras ubicaciones</h3>
+          <div class="owl-container">
+            <div class="owl-carousel owl-theme">
+              <div class="item">
+                <div class="card" style="width: 16rem;height: 450px;">
+                  <img src="assets/img/index/cdmx.jpg" class="card-img-top" alt="..." >
+                  <div class="card-body">
+                    <h5 class="card-title">Ciudad de México</h5>
+                    <p class="card-text">La Ciudad de México es la capital del país, de carácter vibrante, multifacético
+                      y siempre en movimiento, es el núcleo, político, económico y cultural de la República Mexicana.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 16rem;height: 450px;">
+                  <img src="assets/img/index/queretaro.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Queretaro</h5>
+                    <p class="card-text">Ubicado muy cerca de la Ciudad de México, en la región centro-norte del país,
+                      es una excelente opción para realizar actividades al aire libre, conocer lugares que marcaron la
+                      historia de México y sacar tu lado más intrépido entre montañas.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 16rem;height: 450px;">
+                  <img src="assets/img/index/mnt.jpg" class="card-img-top" alt="..." style="height: 170px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Monterrey</h5>
+                    <p class="card-text">El mercado inmobiliario de Monterrey es la joya del dinamismo inmobiliario en
+                      la región norte del país, descubre las razones y busca aquí tu nuevo hogar.</p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 16rem;height: 450px;">
+                  <img src="assets/img/index/gdl.jpg" class="card-img-top" alt="..." style="height: 170px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Guadalajara</h5>
+                    <p class="card-text">La Zona Metropolitana de Guadalajara (ZMG) representa una de las áreas urbanas
+                      con
+                      mayores ventajas y valores agregados para vivir que atrae de manera constante nuevos habitantes.
+                    </p>
+
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="card" style="width: 16rem;height: 450px;">
+                  <img src="assets/img/index/pueb.jpg" class="card-img-top" alt="..." style="height: 200px;">
+                  <div class="card-body">
+                    <h5 class="card-title">Puebla</h5>
+                    <p class="card-text">La oferta gastronómica que nos ofrece este lugar es otra de las grandes razones
+                      de vivir en Puebla. Casi en cada esquina puedes encontrarte un puesto en el que te sirvan
+                      antojitos poblanos, que es como llaman aquí a la comida callejera.</p>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <h3 class="text-center" style="margin-bottom: 20px;font-size: 40px;">Cambia tu vida en 4 simples pasos</h3>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class=" mb-3" style="max-width: 18rem;border-color: var(---color-resaltar) ;">
+            <div class="card-body ">
+              <h4 >Busca</h5>
+              <p >Haz un par de click y busca tu lugar ideal</p>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class=" mb-3" style="max-width: 18rem;">
+            <div class="card-body ">
+              <h4 class="pasos">Encuntra</h5>
+              <p class="pasos">Enamorate de tu lugar ideal.</p>
+            </div>
+          </div>          
+        </div>
+        <div class="col">
+          <div class="  mb-3" style="max-width: 18rem;">
+            <div class="card-body ">
+              <h4 class="pasos">Compra</h5>
+              <p class="pasos">Compra tu lugar ideal.</p>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col">
+          <div class="  mb-3" style="max-width: 18rem;">
+            <div class="card-body ">
+              <h4 class="pasos">Mudate</h5>
+              <p class="pasos">Y vive feliz con tus seres queridos.</p>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    
+  </section>
+  <!--Reseñas-->
+  
+
+
+
+  
+
+
+
+  <!-- iniciamos modal de login -->
+  <!-- El modal de login nos va servir emular un inicio de sesión -->
+  <!-- Modal -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-center h3 py-3">Bienvenido de vuelta</p>
+          <form>
+            <div class="mb-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico"
+                aria-describedby="emailHelp">
+            </div>
+            <div class="mb-3">
+              <label for="contraseña" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="contraseña">
+            </div>
+            <div class="mb-3 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Recordar la contraseña</label>
+            </div>
+            <!-- <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastLogin">Iniciar sesión</button> -->
+            <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn"
+              data-bs-dismiss="modal">Iniciar sesión</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div> <!-- Fin del modal de login -->
+
+  <!-- toast -->
+  <section>
+
+    <!-- ! Forma corta -->
+    <!-- Esto hará que aparezca en la parte inferior izquierda... -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
+      <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Inicio de sesión</strong>
+          <small>Conexión exitosa...</small>
+          <!-- Para que se cierre el toast con data-bs-dismiss -->
+          <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+          <p>Bienvenido de vuelta!</p>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Fin del toast -->
+
+
+
+
+ 
+  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+    <p>Hogari &copy; 2022 Todos los derechos Reservados</p>
+</footer> <!-- Termina footer -->
+
+  <script src="/quieneSomos.html"></script>
+  <script src="/Assets/JS/quieneSomos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
+  
+  <!-- Estos son scripts para los efectos y funcione chido la página ok? -->
+  <script src='assets/js/jquery.min.js'></script>
+  <script src='assets/js/jquery.mousewheel.min.js'></script>
+  <script src='assets/js/owl.carousel.min.js'></script>
+  <script src='assets/js/reseñasCarousel.js'></script>
+  <script src='assets/js/main.js'></script>
+  <script src="Assets/js/toast.js"></script>
+
+</body>
+
+</html>

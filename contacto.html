@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Cargamos bootstrap desde el CDN -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
+    Cargamos los estilos -->
+  <!--Cargamos los iconos de boostrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="/Assets/CSS/contacto/contact.css">
+  <title>Hogari - Contáctanos</title>
+</head>
+
+<body>
+  <!-- Empieza Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+    <div class="container">
+      <a href="index.html" class="navbar-brand">
+        <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="col-xs-4 navbar-nav mx-auto ms-auto py-2 text-menu">
+          <li class="nav-item">
+            <!--La clase active se debe de poner en cada página del en el navbar -->
+            <a href="/index.html" class="nav-link active" aria-current="page">
+              Inicio
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="/ventas.html" class="nav-link"> Productos </a>
+          </li>
+          <li class="nav-item">
+            <a href="/contacto.html" class="nav-link"> Contáctanos </a>
+          </li>
+          <li class="nav-item">
+            <a href="/nosotros.html" class="nav-link"> Acerca de nosotros </a>
+          </li>
+        </ul>
+        <ul class="navbar-nav col-xs-4 border-mq">
+
+
+          <li class="nav-item text-menu">
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Iniciar sesión </a>
+          </li>
+          <a href="Registro.html" class="btn btn-primary btn-signup">Únete</a>
+        </ul>
+      </div>
+    </div>
+  </nav> <!-- navbar -->
+    
+  <main>
+    <div class="banner-area">
+      <div class="content-area">
+        <div class="content">
+          <h1 class="display-5 fw-bold">Contáctanos</h1>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    </div>
+  </main>
+
+  <section>
+    <div class="container" id="animation">
+      <div class="avatar">
+        <a href="/contacto.html">
+          <img src="/Assets/img/contactanos/Card-contact.jpeg" alt="Skytsunami" style=" width: 100%; height: 110px;"/>
+        </a>
+      </div>
+      </div>
+  </section>
+
+  <section>
+    <div class="container mt-5 mb-5">
+      <div class="row">
+        <div class="col-md-4">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.5055046820285!2d-103.43232928460094!3d20.6896876046417!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428aee7fa9f7c5f%3A0xd647fb04da70b150!2sAv%20Naciones%20Unidas%2C%20Zapopan%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1652283656690!5m2!1ses-419!2smx"
+            width="300px" height="300px" style="border:0;margin-left: 40px;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="col-md-4">
+          <div class="card-body">
+            <p class="card-title" style="text-align: center;margin-bottom: 30px;font-size: 30px;padding-top: 0px;">
+              Contactos</p>
+            <p style="text-align: center;"><i class="bi bi-telephone"></i>Teléfono:33225099</p>
+            <p style="text-align: center;"><i class="bi bi-geo-alt"></i>Dirección:Av Naciones Unidas, Zapopan, Jal.</p>
+            <p style="text-align: center;"><i class="bi bi-instagram"></i><a
+                href="https://www.instagram.com/accounts/onetap/?next=%2F"
+                style="text-decoration: none;color:black;">Instagram</a></p>
+            <p style="text-align: center;"><i class="bi bi-facebook"></i><a href="https://es-la.facebook.com/"
+                style="text-decoration: none;color:black;">Facebook</a></p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <form id="enviar-mail" class="">
+            <div class="mb-2 form-floating">
+               
+                <input class="form-control"  id="email" type="email" placeholder="Ejemplo@correo.mx">
+                <label for="email">Correo</label>
+            </div>
+            <div class="mb-2 form-floating">
+             
+              <input class="form-control"  id="asunto" type="text" placeholder="Tu asunto">
+              <label for="asunto">Asunto</label>
+          </div>
+          <div class="mb-2 form-floating">
+            
+            <input class="form-control"  id="nombre" type="text" placeholder="Nombre Completo">
+            <label for="nombre">Nombre</label>
+        </div>
+        <div class="mb-2 form-floating">
+          
+          <input class="form-control"  id="telefono" type="tel" placeholder="Tu telefono">
+          <label for="telefono">Teléfono</label>
+      </div>
+            <div class="mb-2 form-floating">
+                
+                <textarea class="form-control" id="mensaje"></textarea>
+                <label for="mensaje">Comentarios</label>
+            </div>
+  
+
+            <div class="d-flex justify-content-start">
+                    <button id="enviar" class="btn btn-primary btn-signup btn-enviar"type="submit">Enviar</button>
+            </div>
+
+            <div  id="spinner">
+              <div class="sk-chase">
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+                  <div class="sk-chase-dot"></div>
+              </div>
+          </div>
+
+
+        </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+ <!-- Modal login -->
+ <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+  <div class="modal-dialog ">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
+        <form class="" id="form">
+          <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
+          <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
+          <div class="form-floating mb-3">
+            <!-- Email -->
+            <input type="email" class="form-control" 
+            id="email" placeholder="ejemplo@email.com">
+            <label for="email" class="form-label">Ejemplo@correo.com</label>
+          </div>
+          <div class="form-floating mb-3">
+            <!-- password -->
+            <input type="password" class="form-control" id="password" placeholder="Contraseña">
+            <label for="password" class="form-label">Contraseña</label>
+          </div>
+          <!-- olvide contraseña link -->
+          <div class="form-floating mb-3">
+            <a href="#" class="text-muted">Olvidé mi contraseña</a>
+          </div>
+          <!-- checkbox recordar contraseña -->
+          <div class="form-floating mb-3">
+            <div class="custom-control custom-checkbox">
+              <input type="checkbox" class="custom-control-input" id="Check1">
+              <label class="custom-control-label" for="Check1">Recordar contraseña</label>
+            </div>
+            <button type="submit" class="btn btn-primary btn-signup my-4" id="toastBtn"
+            data-bs-dismiss="modal">Iniciar sesión</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+      </div>
+    </div>
+  </div>
+</div> 
+</div> <!-- Fin del modal de login -->
+
+
+
+
+
+  <!-- toast -->
+  <section>
+    <!-- ! Forma corta -->
+    <!-- Esto hará que aparezca en la parte inferior izquierda... -->
+    <div class="position-fixed bottom-0 end-0 p-3" style="z-index:10;">
+      <div id="toast" class="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="toast-header">
+          <strong class="me-auto">Inicio de sesión</strong>
+          <small>Conexión exitosa...</small>
+          <!-- Para que se cierre el toast con data-bs-dismiss -->
+          <button type="button" data-bs-dismiss="toast" aria-label="Cerrar notificación" class="btn-close"></button>
+        </div>
+        <div class="toast-body">
+          <p>Bienvenido de vuelta!</p>
+        </div>
+      </div>
+    </div>
+  </section> <!-- Fin del toast -->
+
+  <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+    <p>Hogari &copy; 2022 Todos los derechos reservados</p>
+  </footer>
+
+
+  <!-- <script src="/Assets/JS/contacto/contacto.js"></script> -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>  
+    <!-- Cargamos jquery desde el CDN -->
+    <script src='assets/js/contacto/app-contact.js'></script>
+</body>
+
+</html>

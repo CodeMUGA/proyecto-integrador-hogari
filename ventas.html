@@ -44,13 +44,15 @@
         </ul>
         <ul class="navbar-nav col-xs-4 border-mq">
           <li class="nav-item text-menu">
-            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Login </a>
+            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Iniciar sesión </a>
           </li>
-          <a href="Registro.html" class="btn btn-primary btn-signup">Sign Up</a>
+          <a href="Registro.html" class="btn btn-primary btn-signup">Únete</a>
         </ul>
       </div>
     </div>
   </nav> <!-- navbar -->
+  
+  
 
         
 
@@ -79,47 +81,51 @@
     </div>
   </div>
 </section>
-<!-- iniciamos modal de login -->
-  <!-- El modal de login nos va servir emular un inicio de sesión -->
-  <!-- Modal -->
-  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="modalLoginLabel">Iniciar Sesión</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <p class="text-center h3 py-3">Bienvenido de vuelta</p>
-          <form id="form">
-            <div class="mb-3">
-              <label for="email" class="form-label">Correo electronico</label>
-              <input type="email" class="form-control" id="email" placeholder="Tu correo electrónico"
-                aria-describedby="emailHelp">
-            </div>
-            <div class="mb-3">
-              <label for="contraseña" class="form-label">Contraseña</label>
-              <input type="password" class="form-control" id="contraseña">
-            </div>
-            <p id="warnings"></p>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Recordar la contraseña</label>
-            </div>
-            <!-- <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastLogin">Iniciar sesión</button> -->
-            <button type="submit" class="btn btn-primary d-flex justify-content-between btn-signup" id="toastBtn"
-              data-bs-dismiss="modal">Iniciar sesión</button>
-          </form>
-          <a href="./Registro.html" class="nav-link active" aria-current="page">
-            ¿No eres miembro? Regístrate 
-          </a>
-        </div>
-        <div class="modal-footer">
 
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+    <!-- Modal login -->
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+      <div class="modal-dialog ">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
+            <form class="" id="form">
+              <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
+              <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
+              <div class="form-floating mb-3">
+                <!-- Email -->
+                <input type="email" class="form-control" 
+                id="email" placeholder="ejemplo@email.com">
+                <label for="email" class="form-label">Ejemplo@correo.com</label>
+              </div>
+              <div class="form-floating mb-3">
+                <!-- password -->
+                <input type="password" class="form-control" id="password" placeholder="Contraseña">
+                <label for="password" class="form-label">Contraseña</label>
+              </div>
+              <!-- olvide contraseña link -->
+              <div class="form-floating mb-3">
+                <a href="#" class="text-muted">Olvidé mi contraseña</a>
+              </div>
+              <!-- checkbox recordar contraseña -->
+              <div class="form-floating mb-3">
+                <div class="custom-control custom-checkbox">
+                  <input type="checkbox" class="custom-control-input" id="Check1">
+                  <label class="custom-control-label" for="Check1">Recordar contraseña</label>
+                </div>
+                <button type="submit" class="btn btn-primary btn-signup my-4" id="toastBtn"
+                data-bs-dismiss="modal">Iniciar sesión</button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          </div>
         </div>
       </div>
-    </div>
+    </div> 
   </div> <!-- Fin del modal de login -->
 
   <!-- toast -->
@@ -187,51 +193,6 @@
 
 
 
-    <!-- Modal -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
-      <div class="modal-dialog ">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
-            <form class="" id="form">
-              <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
-              <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
-              <div class="form-floating mb-3">
-                <!-- Email -->
-                <input type="email" class="form-control" 
-                id="email" placeholder="ejemplo@email.com">
-                <label for="email" class="form-label">Ejemplo@correo.com</label>
-              </div>
-              <div class="form-floating mb-3">
-                <!-- password -->
-                <input type="password" class="form-control" id="password" placeholder="Contraseña">
-                <label for="password" class="form-label">Contraseña</label>
-              </div>
-              <!-- olvide contraseña link -->
-              <div class="form-floating mb-3">
-                <a href="#" class="text-muted">Olvidé mi contraseña</a>
-              </div>
-              <!-- checkbox recordar contraseña -->
-              <div class="form-floating mb-3">
-                <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="Check1">
-                  <label class="custom-control-label" for="Check1">Recordar contraseña</label>
-                </div>
-                <button type="submit" class="btn btn-primary btn-signup my-4" id="toastBtn"
-                data-bs-dismiss="modal">Iniciar sesión</button>
-            </form>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-          </div>
-        </div>
-      </div>
-    </div> 
-  </div> <!-- Fin del modal de login -->
 
 
   <!-- toast -->

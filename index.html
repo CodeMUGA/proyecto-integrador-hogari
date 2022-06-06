@@ -57,11 +57,7 @@
           <li class="nav-item text-menu">
             <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#modalLogin"> Iniciar sesión </a>
           </li>
-
-          <a href="./formulario.html" class="btn btn-primary btn-signup">Únete</a>
-
-          
-
+          <a href="Registro.html" class="btn btn-primary btn-signup">Únete</a>
         </ul>
       </div>
     </div>
@@ -76,18 +72,8 @@
             <h2 class="text-white">Una nueva vida a solo un click</h2>
             <!-- Formulario de busqueda -->
             <form class="form-inline my-2 my-lg-0">
-<<<<<<< HEAD
               <input class="form-control mr-sm-2" type="search" placeholder="¿Que estás buscando?" aria-label="Search">
               <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-=======
-
-              <input class="form-control mr-sm-2" type="search" placeholder="¿Dónde deseas ir?" aria-label="Search">
-              <button class="btn btn-success my-2 my-sm-0" type="submit">Buscar</button>
-
-
-              
-
->>>>>>> a1ed70963c3dbb2ac82f2fa44d01ac5e7ce4b3bc
             </form>
           </div>
         </div>
@@ -269,7 +255,7 @@
   <!-- iniciamos modal de login -->
   <!-- El modal de login nos va servir emular un inicio de sesión -->
 
-    <!-- Modal -->
+    <!-- Modal login -->
     <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
       <div class="modal-dialog ">
         <div class="modal-content">
@@ -279,7 +265,7 @@
           </div>
           <div class="modal-body">
             <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
-            <form class="" id="form">
+            <form class="rounded bg-white p-5" id="form-login">
               <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
               <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
               <div class="form-floating mb-3">
@@ -300,11 +286,23 @@
               <!-- checkbox recordar contraseña -->
               <div class="form-floating mb-3">
                 <div class="custom-control custom-checkbox">
-                  <input type="checkbox" class="custom-control-input" id="Check1">
-                  <label class="custom-control-label" for="Check1">Recordar contraseña</label>
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">Recordar contraseña</label>
                 </div>
-                <button type="submit" class="btn btn-primary btn-signup my-4" id="toastBtn"
-                data-bs-dismiss="modal">Iniciar sesión</button>
+              <button type="submit" class="btn btn-primary btn-signup w-100 my-4" id="btn-login">Iniciar sesión</button>
+              <p class="warnings" id="warnings"></p>
+
+              <div  id="spinner">
+                <div class="sk-chase">
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                    <div class="sk-chase-dot"></div>
+                </div>
+            </div>
+
             </form>
           </div>
           <div class="modal-footer">
@@ -362,6 +360,9 @@
   <script src='assets/js/main.js'></script>
   <script src="Assets/js/toast.js"></script>
   <script src="../lib/anime.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <!-- <script src="Assets/js/toast.js"></script> -->
+  <script src='assets/js/login-inicio/login.js'></script>
   <script>
     AOS.init();
   </script>

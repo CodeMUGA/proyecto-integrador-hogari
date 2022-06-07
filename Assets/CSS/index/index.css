@@ -28,9 +28,11 @@
     background-color: var(--color-primario)!important;
     border-color: var(--color-secundario)!important;
     transition: .2s ease-in-out 0s;
-    border-radius: .5px;
+    border-radius: 10px;
     padding: 5px 40px;
 }
+
+
 
 /* efecto de boton login */
 .btn-signup:hover{

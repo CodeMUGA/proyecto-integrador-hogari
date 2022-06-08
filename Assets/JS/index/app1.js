@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])
-consoleText(["Cambia tu vida", "Sigue estos pasos", "Renuevate."], "text", [
+consoleText(["Cambia tu vida", "Sigue estos pasos", "Renuévate."], "text", [
   "#03364D",
   "#000",
   "#BF6900",

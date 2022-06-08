@@ -74,55 +74,49 @@ function mostrarError(mensaje) {
   }
 }
 
-///Envia el login
-
 function iniciarSesion(e) {
   e.preventDefault();
-
-  //mostrar spinner
   const spinner = document.querySelector("#spinner");
   spinner.style.display = "flex";
+  if (er.test(email.value) && password.value !== "") {
+    setTimeout(() => {
+      spinner.style.display = "flex";
+      window.location.href = "index.html";
+    }, 2000);
+    const usuario = {
+      email: email.value,
+      password: password.value,
+    };
+    console.log(usuario);
 
-  // inicio de session con sweet alert con validacion y loader
-  setTimeout(() => {
-    if (er.test(email.value) && password.value !== "") {
-      Swal.fire({
-        //timer: 2000,
-        title: "Bienvenido",
-        timer: 3000,
-        text: "Sesión iniciada",
-        icon: "success",
-        //spinner loading
-        //loade
-
-        confirmButtonText: "Aceptar",
-      }).then((result) => {
-        if (result.value) {
-          window.location.href = "index.html";
-        }
-      });
+    //autenticación con localstorage
+    if (
+      usuario.email === localStorage.getItem("email") &&
+      usuario.password === localStorage.getItem("password")
+    ) {
+      console.log("autenticado");
+    } else {
+      console.log("no autenticado");
     }
-    spinner.style.display = "none";
-  }, 3000);
+    //localstorage email y password
+    localStorage.setItem("email", usuario.email);
+    localStorage.setItem("password", usuario.password);
 
-  const usuario = {
-    email: email.value,
-    password: password.value,
-  };
-
-  console.log(usuario);
-
-  //localstorage email y password
-  localStorage.setItem("email", usuario.email);
-  localStorage.setItem("password", usuario.password);
-
-  //autenticación con localstorage
-  if (
-    usuario.email === localStorage.getItem("email") &&
-    usuario.password === localStorage.getItem("password")
-  ) {
-    console.log("autenticado");
+    // sweet alert
+    Swal.fire({
+      title:
+        "Bienvenido" + " " + `${localStorage.getItem("email", usuario.email)}`,
+      text: "Iniciaste sesión correctamente",
+      icon: "success",
+    });
   } else {
-    console.log("no autenticado");
+    spinner.style.display = "none";
+    mostrarError("Todos los campos son obligatorios");
+    Swal.fire({
+      icon: "error",
+      title: "Oops...",
+      text: "Algo salió mal!",
+      footer: "Intenta de nuevo",
+    });
   }
 }

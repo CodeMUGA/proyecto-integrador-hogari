@@ -1,125 +1,177 @@
-//?Declaramos las variables que vamos a usar
+//Variables
+const btnSubmit = document.querySelector("#btnSubmit");
+const checkbox = document.querySelector("#customCheck1");
+//Variables para campos
+const nombre = document.querySelector("#name");
+const email = document.querySelector("#email");
+const form = document.querySelector("#form");
+const apellido = document.querySelector("#apellido");
+const apellido2 = document.querySelector("#apellido2");
+const password = document.querySelector("#password");
+const password2 = document.querySelector("#password2");
+const parrafo = document.querySelector("#warnings");
+const er =
+  /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
-const nombre = document.getElementById("name");
-const email = document.getElementById("email");
-const form = document.getElementById("form");
-const apellido = document.getElementById("apellido");
-const apellido2 = document.getElementById("apellido2");
-const password = document.getElementById("password");
-const password2 = document.getElementById("password2");
-const parrafo = document.getElementById("warnings");
-const checkbox = document.getElementById("customCheck1");
+//password regex
+const passRegex =
+  /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}/;
 
-form.addEventListener("submit", (e) => {
-  e.preventDefault(); //Esta linea de codigo evita que se envie  por default,que se quede estatico
-  let warnings = ""; //variable vacia para sobreescribir los warnings
-  let entrar = false;
-  let regexEmail =
-    /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; //Exprecion regular para validar el email
-  let regexName = /^[a-z ,.'-]+$/i;
-  let regexApellido = /^[a-z ,.'-]+$/i;
-  let regexApellido2 = /^[a-z ,.'-]+$/i;
-  let regexPassword = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
-  let regexPassword2 = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/gm;
-  //let regexNumber=/^[0-9]+$
+eventListeners();
 
-  parrafo.innerHTML = "";
-  if (!regexName.test(nombre.value) || nombre.value == "") {
-    warnings += "Falta por escribir nombre <br>";
+function eventListeners() {
+  //Cuando el registro inicia
+  document.addEventListener("DOMContentLoaded", iniciarApp);
+  // campos del formulario
+  nombre.addEventListener("blur", validaFormulario);
+  email.addEventListener("blur", validaFormulario);
+  apellido.addEventListener("blur", validaFormulario);
+  apellido2.addEventListener("blur", validaFormulario);
+  password.addEventListener("blur", validaFormulario);
+  password2.addEventListener("blur", validaFormulario);
 
-    entrar = true;
-  }
-  if (!regexApellido.test(apellido.value) || apellido.value == "") {
-    warnings += "Faltan por escribir apellidos <br>";
+  //Evento submit
+  form.addEventListener("submit", validarFormulario);
+}
 
-    entrar = true;
-  }
-  if (!regexApellido2.test(apellido2.value) || apellido2.value == "") {
-    warnings += "Faltan por escribir apellidos <br>";
+//Functions
 
-    entrar = true;
-  }
-  if (!regexEmail.test(email.value) || email.value == "") {
-    //en esta linea de codigo vamos a hacer un test del valor de nuestro email con nuestro regex
-    warnings += "Émail no válido <br>";
+function iniciarApp() {
+  // btnSubmit.disabled = true;
+}
 
-    entrar = true;
-  }
-  if (!regexPassword.test(password.value) || password.value == "") {
-    warnings += "Contraseña no permitida, necesita 8 caracteres minimo<br>";
+// valida el formulario
 
-    entrar = true;
-  }
-
-  if (
-    !regexPassword2.test(password2.value) ||
-    password2.value == "" ||
-    password.value !== password2.value
-  ) {
-    warnings += "La contraseña no coincide <br>";
-
-    entrar = true;
-  }
-
-  if (entrar) {
-    parrafo.innerHTML = warnings;
+function validaFormulario(e) {
+  if (e.target.value.length > 0) {
+    //Elimina los errores...
+    const error = document.querySelector("p.error");
+    if (error) {
+      error.remove();
+    }
+    e.target.classList.remove("border", "border-danger");
+    e.target.classList.add("border", "border-success");
   } else {
-    parrafo.innerHTML = "enviado";
-    var datos = []; //Aqui declaramos un arreglo donde estaremos almacenandos los datos que se vayan agregar a de tu form
-    function agregarDatosForm(
-      nombreUsario,
-      apellidoUsuario,
-      apellido2Usuario,
-      emailUsuario,
-      passwordUsuario,
-      password2Usuario
-    ) {
-      var nuevoUsario = {
-        //Aqui se crea el objeto
-        name: nombreUsario,
-        apellido: apellidoUsuario,
-        apellido2: apellido2Usuario,
-        email: emailUsuario,
-        password: passwordUsuario,
-        password2: password2Usuario,
-      };
-      console.log(nuevoUsario);
-      datos.push(nuevoUsario);
-    }
-    function obtenerDatos() {
-      return datos;
-    }
+    e.target.classList.add("border", "border-success");
+    e.target.classList.remove("border", "border-danger");
 
-    document
-      .querySelector("#btnSubmit")
-      .addEventListener("click", guardarDatosForm);
-
-    function guardarDatosForm() {
-      var guardarNombre = document.getElementById("name").value,
-        guardarApellido = document.getElementById("apellido").value,
-        guardarApellido2 = document.getElementById("apellido2").value,
-        guardarEmail = document.getElementById("email").value,
-        guardarPassword = document.getElementById("password").value,
-        guardarPassword2 = document.getElementById("password2").value;
-
-      agregarDatosForm(
-        guardarNombre,
-        guardarApellido,
-        guardarApellido2,
-        guardarEmail,
-        guardarPassword,
-        guardarPassword2
-      );
+    mostrarError("Todos los campos son obligatorios");
+  }
+  //valida email
+  if (e.target.type === "email") {
+    if (er.test(e.target.value)) {
+      const error = document.querySelector("p.error");
+      if (error) {
+        error.remove();
+      }
+      e.target.classList.remove("border", "border-danger");
+      e.target.classList.add("border", "border-success");
+    } else {
+      e.target.classList.add("border", "border-success");
+      e.target.classList.remove("border", "border-danger");
+      mostrarError("Email no válido");
     }
   }
+  //validar y comparar contraseñas
+  if (e.target.type === "password") {
+    if (e.target.value.length > 0) {
+      const error = document.querySelector("p.error");
+      if (error) {
+        error.remove();
+      }
+      e.target.classList.remove("border", "border-danger");
+      e.target.classList.add("border", "border-success");
+    } else {
+      e.target.classList.add("border", "border-success");
+      e.target.classList.remove("border", "border-danger");
+      mostrarError("Todos los campos son obligatorios");
+    }
 
-  // checkbox button disable
-  // if (checkbox.checked) {
-  //   document.getElementById("btnSubmit").disabled = false;
-  // }
+    if (e.target.value.length > 0) {
+      if (passRegex.test(e.target.value)) {
+        const error = document.querySelector("p.error");
+        if (error) {
+          error.remove();
+        }
+        e.target.classList.remove("border", "border-danger");
+        e.target.classList.add("border", "border-success");
+      } else {
+        e.target.classList.add("border", "border-success");
+        e.target.classList.remove("border", "border-danger");
+        mostrarError("La contraseña debe tener al menos 8 caracteres");
+      }
+    }
+    if (e.target.value === password2.value) {
+      const error = document.querySelector("p.error");
+      if (error) {
+        error.remove();
+      }
+      e.target.classList.remove("border", "border-danger");
+      e.target.classList.add("border", "border-success");
+    } else {
+      e.target.classList.add("border", "border-success");
+      e.target.classList.remove("border", "border-danger");
+      mostrarError("Las contraseñas no coinciden");
+    }
+  }
+}
 
-  // // checkbox button enable
-  // if (checkbox.checked == false) {
-  //   document.getElementById("btnSubmit").disabled = true;
-  // }
-});
+if (
+  nombre.value !== "" &&
+  er.test(e.target.value) !== "" &&
+  apellido.value !== "" &&
+  apellido2.value !== "" &&
+  passRegex.test(e.target.value) !== "" &&
+  password.value !== "" &&
+  password2.value !== "" &&
+  password.value === password2.value
+) {
+  btnSubmit.disabled = false;
+}
+
+function mostrarError(mensaje) {
+  const mensajeError = document.createElement("p");
+  mensajeError.textContent = mensaje;
+  mensajeError.classList.add(
+    "text-white",
+    "bg-danger",
+    "fw-bold",
+    "p-3",
+    "mt-2",
+    "error"
+  );
+  const errores = document.querySelectorAll(".error");
+  if (errores.length === 0) {
+    form.appendChild(mensajeError);
+  }
+}
+
+//Registro formulario
+
+function validarFormulario(e) {
+  e.preventDefault();
+
+  //sweet alert registro exitoso
+
+  setTimeout(() => {
+    Swal.fire({
+      title: "Registro exitoso",
+      text: "Bienvenido a la comunidad",
+      icon: "success",
+      confirmButtonText: "Aceptar",
+    });
+  }, 3000);
+
+  // almacenar json
+
+  const usuario = {
+    nombre: nombre.value,
+    apellido: apellido.value,
+    apellido2: apellido2.value,
+    email: email.value,
+    password: password.value,
+  };
+  console.log(usuario);
+  //crear el local storage
+  localStorage.setItem("usuario", JSON.stringify(usuario));
+}

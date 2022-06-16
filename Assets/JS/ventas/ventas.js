@@ -118,7 +118,7 @@ addItem3({'name':'Recámara en Guadalajara, Jalisco',
                     div_Productos.innerHTML += `
                         <div class="col-md-4">
                         <div class="card mb-4 shadow-sm">
-                            <img class="bd-placeholder-img card-img-top" role="img" src="./Assets/img/${p.imagen}" />
+                            <img class="bd-placeholder-img card-img-top" role="img" src="./Assets/img/${p.imagen}" style="height:250px;"/>
                             <div class="card-body">
                             <p class="card-text"><strong>${p.direccion}</strong></p>
                             <p class="card-text">${p.descripcion}</p>

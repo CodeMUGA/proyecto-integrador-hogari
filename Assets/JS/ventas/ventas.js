@@ -17,9 +17,6 @@ addItem({'name':'Casa en Guadalajara, Jalisco',
     'img': '/Assets/img/CASA_RENTA.webp',
     'description':'Casa en renta. Cuenta con dos pisos, y cochera en Av. Lopez Mateos','precio':'$20,000'});
 
-addItem({'name':'Recámara en Guadalajara, Jalisco',
-    'img':'/Assets/img/RECAMARA.jpg',
-    'description':'Recámara con cama matrimonial y baño incluido.','precio':' $8,000'})
 
     addItem({'name':'Casa vacacional',
     'img':'/Assets/img/casa2.jpg',
@@ -33,29 +30,21 @@ addItem({'name':'Recámara en Guadalajara, Jalisco',
     'img':'/Assets/img/BALCON.webp',
     'description':'Departamento en zona sur de Guadalajara','precio':'$20,000'});
 
-   var contenido=document.getElementById("contenido");
+window.addEventListener("load", function (){ //cuando se cargue la página
+    let div = document.getElementById("div_Productos"); //div donde se va a agregar los productos
+    addItems(div); //se llama a la función addItems
+   
+});
 
-   function addItem2(item){
-    const itemHTML = '<div class="card" style="width: 20rem;box-shadow:10px 10px  10px gray;">\n' +
-        '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+item.name+'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <p class="card-text">\n' +item.precio+' Renta/mensual</p>\n'+
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-    const itemsContainer = document.getElementById("list-items2");
-    itemsContainer.innerHTML += itemHTML;
-}
-//tarjetas con imagenes y deecripciones de lso elementos en venta
-addItem2({'name':'Casa en Guadalajara, Jalisco',
-    'img': '/Assets/img/CASA_RENTA.webp',
-    'description':'Casa en renta. Cuenta con dos pisos, y cochera en Av. Lopez Mateos','precio':'$20,000'});
+function view(index) { //index es el índice del producto que se va a ver
+    // console.log(index);
+    // console.table(productos[index]);
+    document.getElementById("productTitleModal").innerHTML=productos[index].nombre; //se cambia el título del modal
+    document.getElementById("productBodyModal").innerHTML=`${productos[index].descripcion}  <img class="bd-placeholder-img card-img-top" role="img" src="img/${productos[index].url_Imagen}" />
+    <strong>$ ${productos[index].price} MXN<strong>`; //se cambia el cuerpo del modal
+    $("#productModal").modal("show"); //se muestra el modal
+}// view
 
-addItem2({'name':'Recámara en Guadalajara, Jalisco',
-    'img':'/Assets/img/RECAMARA.jpg',
-    'description':'Recámara con cama matrimonial y baño incluido.','precio':' $8,000'})
 
     addItem2({'name':'Casa vacacional',
     'img':'/Assets/img/casa2.jpg',

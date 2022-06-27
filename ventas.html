@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elementos</title>
-    <!-- Iconos de bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-    <!-- Cargamos bootstrap desde el CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- Cargamos los estilos -->
-    <link rel="stylesheet" href="Assets/css/estilos.css">
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elementos</title>
+  <!-- Iconos de bootstrap -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <!-- Cargamos bootstrap desde el CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <!-- Cargamos los estilos -->
+  <link rel="stylesheet" href="Assets/css/estilos.css">
+
 </head>
+
 <body>
+<<<<<<< HEAD
 <<<<<<< HEAD
       <!-- Empieza Navbar -->
       <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
@@ -55,6 +59,10 @@
 =======
    <!-- Empieza Navbar -->
    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+=======
+  <!-- Empieza Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-color sticky-top ">
+>>>>>>> 1b666f63e5610a089bf6e862c563e42142bdd9ba
     <div class="container">
       <a href="index.html" class="navbar-brand">
         <img src="Assets/img/hogari-logo.png" alt="" width="100" class="d-inline-block align-text-top">
@@ -94,31 +102,35 @@
   
 >>>>>>> b21539c409e69c86907a5dd7ab7e49e715c747b7
 
-        
 
 
-        
 
-<section>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-12 d-flex justify-content-center p-5"> <!--- col-md-12 para centrar el formulario -->
-        <form class="col-md-5 d-flex justify-content-center" role="search"><!--- col-md-5 para la anchura del input -->
-          <input class="form-control me-2 " type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            Ciudad
-          </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Guadalajara</a></li>
-            <li><a class="dropdown-item" href="#">Monterrey</a></li>
-            <li><a class="dropdown-item" href="#">Ciudad de mexico</a></li>
-            <li><a class="dropdown-item" href="#">Puebla</a></li>
-          </ul>
-          
-        </form> 
-        <a href="./formarrendador.html" class="nav-link" id="btn-producto" > Agregar un nuevo producto </a>
+
+
+
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 d-flex justify-content-center p-5">
+          <!--- col-md-12 para centrar el formulario -->
+          <form class="col-md-5 d-flex justify-content-center" role="search">
+            <!--- col-md-5 para la anchura del input -->
+            <select class="form-select" aria-label="Default select example">
+              <option selected>Selecciona la ciudad dónde deseas vivir</option>
+              <option value="1">Ciudad de México</option>
+              <option value="2">Guadalajara</option>
+              <option href="./ventas2.html">Monterrey</option>
+            </select>
+
+            <a href="./formarrendador.html" class="nav-link" id="btn-producto"> ¡Vamos! </a>
+
+          </form>
+          <a href="./formarrendador.html" class="nav-link" id="btn-producto"> Agregar un nuevo producto </a>
+        </div>
       </div>
     </div>
+<<<<<<< HEAD
   </div>
 </section>
 
@@ -166,6 +178,53 @@
         </div>
       </div>
     </div> 
+=======
+  </section>
+
+  <!-- Modal login -->
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog ">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalLoginLabel">Bienvenido de vuelta</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <img src="Assets/img/hogari-logo.png" class="img-fluid p-2 " width="50%" alt="">
+          <form class="" id="form">
+            <h3 class="text-dark fw-bold fs-4 mb-2">Inicio de sesión</h3>
+            <div class="fw-normal text-muted mb-4">¿No tienes cuenta? <a href="Registro.html">Registrate</a></div>
+            <div class="form-floating mb-3">
+              <!-- Email -->
+              <input type="email" class="form-control" id="email" placeholder="ejemplo@email.com">
+              <label for="email" class="form-label">Ejemplo@correo.com</label>
+            </div>
+            <div class="form-floating mb-3">
+              <!-- password -->
+              <input type="password" class="form-control" id="password" placeholder="Contraseña">
+              <label for="password" class="form-label">Contraseña</label>
+            </div>
+            <!-- olvide contraseña link -->
+            <div class="form-floating mb-3">
+              <a href="#" class="text-muted">Olvidé mi contraseña</a>
+            </div>
+            <!-- checkbox recordar contraseña -->
+            <div class="form-floating mb-3">
+              <div class="custom-control custom-checkbox">
+                <input type="checkbox" class="custom-control-input" id="Check1">
+                <label class="custom-control-label" for="Check1">Recordar contraseña</label>
+              </div>
+              <button type="submit" class="btn btn-primary btn-signup my-4" id="toastBtn"
+                data-bs-dismiss="modal">Iniciar sesión</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> 1b666f63e5610a089bf6e862c563e42142bdd9ba
   </div> <!-- Fin del modal de login -->
 
   <!-- toast -->
@@ -183,14 +242,28 @@
         </div>
         <div class="toast-body">
           <p>¡Bienvenido de vuelta!</p>
+<<<<<<< HEAD
         </div> 
       </div> 
     </div>  
+=======
+        </div>
+      </div>
+    </div>
+>>>>>>> 1b666f63e5610a089bf6e862c563e42142bdd9ba
   </section> <!-- Fin del toast -->
 
 
+  <br>
+  <br>
 
+  <!--Columnas y Tarjetas-->
+  <div class="container">
+    <div class="row d-flex justify-content-center">
+      <div class="col-sm">
+        <div id="list-items">
 
+<<<<<<< HEAD
 <!--Columnas y Tarjetas-->
 <div class="container">
   <div class="row d-flex justify-content-center">
@@ -230,6 +303,41 @@
   
   </div>
 </div>
+=======
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="list-items2">
+
+        </div>
+      </div>
+      <div class="col-sm">
+        <div id="list-items3">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row align-items-center" style="margin-left: 180px;">
+    <div class="col mb-4">
+
+    </div>
+    <div class="col mb-6">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content">
+
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="/ventas2.html">2</a></li>
+          <li class="page-item"><a class="page-link" href="/ventas3.html">3</a></li>
+
+        </ul>
+      </nav>
+    </div>
+    <div class="col mb-4">
+
+    </div>
+  </div>
+>>>>>>> 1b666f63e5610a089bf6e862c563e42142bdd9ba
 
 
 
@@ -255,6 +363,7 @@
   </section> <!-- Fin del toast -->
 
   <footer class="bg-light text-dark text-center pb-2 pt-4 footer-class">
+<<<<<<< HEAD
       <p>Hogari &copy; 2022 Todos los derechos reservados</p>
   </footer> <!-- Termina footer -->
 
@@ -266,4 +375,23 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
     
+=======
+    <p>Hogari &copy; 2022 Todos los derechos reservados</p>
+  </footer> <!-- Termina footer -->
+
+
+  <script src="./Assets/JS/ventas/ventas.js"></script>
+
+  <script src="/Assets/JS/"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"
+    integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js"
+    integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy"
+    crossorigin="anonymous"></script>
+
+>>>>>>> 1b666f63e5610a089bf6e862c563e42142bdd9ba
 </html>
